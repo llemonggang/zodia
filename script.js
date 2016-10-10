@@ -48,20 +48,21 @@ function phaseMoon() {
       document.getElementById("date").value = today;
       console.log(today);
 
-    $('.preview').on('click', function(e) {
-      e.preventDefault()
+      $('.preview').on('click', function(e) {
+        e.preventDefault()
 
-        var output = document.getElementById("out");
+          var output = document.getElementById("out");
 
-      $.ajax({
-      url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
-      date: today,
-      latitude: latitude,
-      longitude: longitude
-      }).done(function(data) {
-      console.log(data);
+        $.ajax({
+        url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
+        date: today,
+        latitude: latitude,
+        longitude: longitude
+        }).done(function(data) {
+        console.log(data);
+        });
       });
-    });
+    }
 
   };
 
