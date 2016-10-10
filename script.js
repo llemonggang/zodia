@@ -48,8 +48,8 @@ function phaseMoon() {
           e.preventDefault()
             var output = document.getElementById("out");
           $.ajax({
-          url:'https://api.aerisapi.com/sunmoon/moonphases/?p=' + latitude + ',' + longitude + '&client_id=' + client + '&client_secret=' + secret,
-          client: 'id5zV9deaqOeGuK3mYadq',
+          url:'https://api.aerisapi.com/sunmoon/moonphases/?p=' + latitude + ',' + longitude + '&client_id=' + id + '&client_secret=' + secret,
+          id: 'id5zV9deaqOeGuK3mYadq',
           secret: 'Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
           // today: today,
           latitude: latitude,
