@@ -8,7 +8,7 @@ function apodImage() {
     $.ajax({
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
-      var img = $('.image').html('<img src="' + data.url + '" />')
+      var img = $('#image').html('<img src="' + data.url + '" />')
     });
 
 }
