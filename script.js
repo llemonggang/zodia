@@ -20,25 +20,6 @@ function apodImage() {
   })
 }
 
-function getDate() {
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth()+1;
-
-  var yyyy = today.getFullYear();
-  if(dd<10){
-      dd='0'+dd
-  }
-  if(mm<10){
-      mm='0'+mm
-  }
-  var today = dd+'/'+mm+'/'+yyyy;
-  document.getElementById("date").value = today;
-  console.log(today);
-
-  var output = document.getElementById("out");
-}
-
 function phaseMoon() {
 
   if (!navigator.geolocation){
@@ -51,15 +32,33 @@ function phaseMoon() {
     var longitude = position.coords.longitude;
     console.log(latitude, longitude);
 
+    function getDate() {
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1;
+
+      var yyyy = today.getFullYear();
+      if(dd<10){
+          dd='0'+dd
+      }
+      if(mm<10){
+          mm='0'+mm
+      }
+      var today = dd+'/'+mm+'/'+yyyy;
+      document.getElementById("date").value = today;
+      console.log(today);
+
     $('.preview').on('click', function(e) {
       e.preventDefault()
-      getDate()
+
+        var output = document.getElementById("out");
+      }
       $.ajax({
       url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
-      date: 10/10/2016,
+      date: today,
       latitude: latitude,
       longitude: longitude
-    }).done(function(data) {
+      }).done(function(data) {
       console.log(data);
       });
     });
