@@ -15,11 +15,7 @@ function apodImage() {
 
 function phaseMoon() {
 
-    navigator.geolocation.getCurrentPosition(success);
-
-  // if (!navigator.geolocation){
-  //   return;
-  // }
+  navigator.geolocation.getCurrentPosition(success);
 
   function success(position) {
     var latitude = position.coords.latitude;
@@ -40,7 +36,6 @@ function phaseMoon() {
     var today = dd+'/'+mm+'/'+yyyy;
     var date = $('#date').html(today);
 
-          // var output = document.getElementById("out");
     $.ajax({
     url:'https://api.aerisapi.com/sunmoon/?p=' + latitude + ',' + longitude + '&to=:' + today + '&client_id=id5zV9deaqOeGuK3mYadq&client_secret=Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
     today: today,
@@ -78,7 +73,5 @@ function phaseMoon() {
     });
 
   };
-
-
 
 }
