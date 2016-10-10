@@ -10,8 +10,6 @@ function apodImage() {
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
       var img = $('.image').html('<img src="' + data.url + '" />')
-      var explanation = $('.explanation').text(data.explanation)
-      return explanation;
     });
 
 }
@@ -42,8 +40,6 @@ function phaseMoon() {
     var today = dd+'/'+mm+'/'+yyyy;
     console.log(today);
 
-        $('.preview').on('click', function(e) {
-          e.preventDefault()
             var output = document.getElementById("out");
           $.ajax({
           url:'https://api.aerisapi.com/sunmoon/?p=' + latitude + ',' + longitude + '&to=:' + today + '&client_id=id5zV9deaqOeGuK3mYadq&client_secret=Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
@@ -54,7 +50,6 @@ function phaseMoon() {
           var moon = $('.moon').html(data.response['0'].moon.phase.name);
           return moon;
           });
-        });
 
   };
 
