@@ -56,7 +56,7 @@ function phaseMoon() {
       getDate()
       $.ajax({
       url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
-      date: today,
+      date: 10/10/2016,
       latitude: latitude,
       longitude: longitude
     }).done(function(data) {
