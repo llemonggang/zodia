@@ -45,7 +45,7 @@ function phaseMoon() {
       // document.getElementById("date").value = today;
       console.log(today);
 
-        $('.preview').on('click', function(e) {
+        $('.preview').on('click', function(today, e) {
           e.preventDefault()
 
             var output = document.getElementById("out");
