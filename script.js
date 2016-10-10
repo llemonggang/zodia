@@ -50,7 +50,7 @@ function phaseMoon() {
       //   console.log('working');
       // }
 
-      switch(moon.html) {
+      switch(moon.html()) {
         case 'waxing gibbous':
         console.log('yes!');
             // $('.icon').html('<img src="./images/waxing-gibbous.png" />')
