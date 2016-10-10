@@ -52,7 +52,8 @@ function phaseMoon() {
 
       switch(moon.html()) {
         case 'waxing gibbous':
-            $('.icon').html('./images/waxing-gibbous.png')
+            $('.icon').html('./images/waxing-gibbous.png');
+            console.log('working');
             break;
         case 'waning gibbous':
             $('.icon').html('<img src="./images/waning-gibbous.png" />')
