@@ -43,7 +43,7 @@ function phaseMoon() {
     longitude: longitude
     }).done(function(data) {
     var moon = $('.moon').text(data.response['0'].moon.phase.name);
-    return moon;
+    
     console.log(moon);
 
       if (moon === 'waxing gibbous') {
