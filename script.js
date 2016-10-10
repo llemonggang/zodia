@@ -41,7 +41,6 @@ function phaseMoon() {
           mm='0'+mm
       }
     var today = dd+'/'+mm+'/'+yyyy;
-    // document.getElementById("date").value = today;
     console.log(today);
 
         $('.preview').on('click', function(e) {
@@ -59,6 +58,6 @@ function phaseMoon() {
 
   };
 
-  navigator.geolocation.getCurrentPosition(success);
+  // navigator.geolocation.getCurrentPosition(success);
 
 }
