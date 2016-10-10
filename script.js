@@ -33,7 +33,7 @@ function getDate() {
       mm='0'+mm
   }
   var today = dd+'/'+mm+'/'+yyyy;
-  document.getElementById("DATE").value = today;
+  document.getElementById("date").value = today;
   console.log(today);
 
   var output = document.getElementById("out");
