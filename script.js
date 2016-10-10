@@ -48,7 +48,7 @@ function phaseMoon() {
     }).done(function(data) {
     var moon = $('.moon').html(data.response['0'].moon.phase.name);
     return moon;
-    var icon = $('#icon').html('<img src="./images/waxing-gibbous.png" />');
+    var icon = $('#icon').html('./images/first.png');
     return icon
     // switch(moon) {
     //   case 'waxing gibbous':
