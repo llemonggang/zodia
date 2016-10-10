@@ -18,40 +18,35 @@ function apodImage() {
       return explanation;
   });
   })
-  getLoc()
 }
 
 function phaseMoon() {
+  var output = document.getElementById("out");
 
-  function getLoc() {
-    var output = document.getElementById("out");
-
-    if (!navigator.geolocation){
-      output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-      return;
-    }
-
-    function success(position) {
-      var latitude = position.coords.latitude;
-      var longitude = position.coords.longitude;
-      console.log(latitude, longitude);
-
-      $('.preview').on('click', function(e) {
-        e.preventDefault()
-        $.ajax({
-        url:'http://api.usno.navy.mil/rstt/oneday?',
-        date: '10/10/2016',
-        latitude: latitude,
-        longitude: longitude
-      }).done(function(data) {
-        console.log(data);
-        });
-      });
-
-    };
-
-    navigator.geolocation.getCurrentPosition(success);
-
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
   }
+
+  function success(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    console.log(latitude, longitude);
+
+    $('.preview').on('click', function(e) {
+      e.preventDefault()
+      $.ajax({
+      url:'http://api.usno.navy.mil/rstt/oneday?',
+      date: '10/10/2016',
+      latitude: latitude,
+      longitude: longitude
+    }).done(function(data) {
+      console.log(data);
+      });
+    });
+
+  };
+
+  navigator.geolocation.getCurrentPosition(success);
 
 }
