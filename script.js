@@ -42,12 +42,12 @@ function phaseMoon() {
           mm='0'+mm
       }
       var today = dd+'/'+mm+'/'+yyyy;
-      // document.getElementById("date").value = today;
+      document.getElementById("date").value = today;
       console.log(today);
 
         $('.preview').on('click', function(e) {
           e.preventDefault()
-            var output = document.getElementById("out");
+            // var output = document.getElementById("out");
           $.ajax({
           url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
           date: today,
