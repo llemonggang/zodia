@@ -71,7 +71,7 @@ function phaseMoon() {
           $('.icon').html('<img src="./images/first.png" />')
           break;
       default:
-          default $('.icon').html('<img src="./images/last.png" />')
+          return $('.icon').html('<img src="./images/last.png" />')
       }
     });
 
