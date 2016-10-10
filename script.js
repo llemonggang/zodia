@@ -18,8 +18,7 @@ function apodImage() {
       return explanation;
   });
   })
-  // getLoc()
-  geoFindMe()
+  getLoc()
 }
 
 // function phaseMoon() {
@@ -34,14 +33,7 @@ function apodImage() {
 //   });
 // }
 
-// function getLoc() {
-//   var loc = navigator.geolocation.watchPosition();
-//   // var latitude = position.coords.latitude;
-//   // var longitude = position.coords.longitude;
-//   console.log(loc);
-// }
-
-function geoFindMe() {
+function getLoc() {
   var output = document.getElementById("out");
 
   if (!navigator.geolocation){
@@ -52,8 +44,6 @@ function geoFindMe() {
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
-
-    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 
   };
 
