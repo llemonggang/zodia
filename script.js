@@ -48,6 +48,6 @@ function phaseMoon() {
 
   };
 
-  // navigator.geolocation.getCurrentPosition(success);
+  navigator.geolocation.getCurrentPosition(success);
 
 }
