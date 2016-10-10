@@ -50,28 +50,28 @@ function phaseMoon() {
     return moon;
     switch(moon) {
       case 'waxing gibbous':
-          $('#icon').html('<img src="./images/waxing-gibbous.png" />')
+          $('.icon').html('<img src="./images/waxing-gibbous.png" />')
           break;
       case 'waning gibbous':
-          $('#icon').html('<img src="./images/waning-gibbous.png" />')
+          $('.icon').html('<img src="./images/waning-gibbous.png" />')
           break;
       case 'waxing crescent':
-          $('#icon').html('<img src="./images/waxing-crescent.png" />')
+          $('.icon').html('<img src="./images/waxing-crescent.png" />')
           break;
       case 'waning crescent':
-          $('#icon').html('<img src="./images/waning-crescent.png" />')
+          $('.icon').html('<img src="./images/waning-crescent.png" />')
           break;
       case 'full moon':
-          $('#icon').html('<img src="./images/full.png" />')
+          $('.icon').html('<img src="./images/full.png" />')
           break;
       case 'new moon':
-          $('#icon').html('<img src="./images/new.png" />')
+          $('.icon').html('<img src="./images/new.png" />')
           break;
       case 'first moon':
-          $('#icon').html('<img src="./images/first.png" />')
+          $('.icon').html('<img src="./images/first.png" />')
           break;
       default:
-          default $('#icon').html('<img src="./images/last.png" />')
+          default $('.icon').html('<img src="./images/last.png" />')
       }
     });
 
