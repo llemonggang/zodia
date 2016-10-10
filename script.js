@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     apodImage()
-    phaseMoon()
+    // phaseMoon()
 
 });
 
@@ -14,7 +14,7 @@ function apodImage() {
 
 }
 
-  function success(position) {
+  function phaseMoon(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     console.log(latitude, longitude);
