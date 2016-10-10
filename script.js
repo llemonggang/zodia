@@ -14,9 +14,7 @@ function apodImage() {
 
 }
 
-function phaseMoon() {
-
-  function success(position) {
+  function phaseMoon(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     console.log(latitude, longitude);
@@ -49,5 +47,3 @@ function phaseMoon() {
   };
 
   // navigator.geolocation.getCurrentPosition(success);
-
-}
