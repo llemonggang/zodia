@@ -36,7 +36,7 @@ function phaseMoon() {
     $('.preview').on('click', function(e) {
       e.preventDefault()
       $.ajax({
-      url:'http://api.usno.navy.mil/rstt/oneday?',
+      url:'https://api.usno.navy.mil/rstt/oneday?',
       date: '10/10/2016',
       latitude: latitude,
       longitude: longitude
