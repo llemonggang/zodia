@@ -34,12 +34,12 @@ function apodImage() {
 //   });
 // }
 
-function getLoc() {
-  var loc = navigator.geolocation.watchPosition();
-  // var latitude = position.coords.latitude;
-  // var longitude = position.coords.longitude;
-  console.log(loc);
-}
+// function getLoc() {
+//   var loc = navigator.geolocation.watchPosition();
+//   // var latitude = position.coords.latitude;
+//   // var longitude = position.coords.longitude;
+//   console.log(loc);
+// }
 
 function geoFindMe() {
   var output = document.getElementById("out");
