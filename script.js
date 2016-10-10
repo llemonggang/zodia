@@ -42,11 +42,11 @@ function getLoc() {
   }
 
   function success(position) {
-    var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
 
   };
 
   navigator.geolocation.getCurrentPosition(success);
-  console.log(success);
+  console.log(lat, lon);
 }
