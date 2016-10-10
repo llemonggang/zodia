@@ -2,7 +2,6 @@ $( document ).ready(function() {
     console.log( "ready!" );
     apodImage()
     phaseMoon()
-    getDate()
 
 });
 
@@ -31,7 +30,6 @@ function phaseMoon() {
     var longitude = position.coords.longitude;
     console.log(latitude, longitude);
 
-    function getDate() {
       var today = new Date();
       var dd = today.getDate();
       var mm = today.getMonth()+1;
@@ -47,21 +45,20 @@ function phaseMoon() {
       document.getElementById("date").value = today;
       console.log(today);
 
-      $('.preview').on('click', function(e) {
-        e.preventDefault()
+        $('.preview').on('click', function(e) {
+          e.preventDefault()
 
-          var output = document.getElementById("out");
+            var output = document.getElementById("out");
 
-        $.ajax({
-        url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
-        date: today,
-        latitude: latitude,
-        longitude: longitude
-        }).done(function(data) {
-        console.log(data);
+          $.ajax({
+          url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
+          date: today,
+          latitude: latitude,
+          longitude: longitude
+          }).done(function(data) {
+          console.log(data);
+          });
         });
-      });
-    }
 
   };
 
