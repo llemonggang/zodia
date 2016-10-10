@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-    apodImage()
-    phaseMoon()
+    // apodImage()
+    // phaseMoon()
 });
 
 function apodImage() {
