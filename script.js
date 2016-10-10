@@ -16,10 +16,9 @@ function apodImage() {
 
 function phaseMoon() {
 
-  if (!navigator.geolocation){
-    // output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-    return;
-  }
+  // if (!navigator.geolocation){
+  //   return;
+  // }
 
   function success(position) {
     var latitude = position.coords.latitude;
