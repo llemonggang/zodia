@@ -48,33 +48,31 @@ function phaseMoon() {
     }).done(function(data) {
     var moon = $('.moon').html(data.response['0'].moon.phase.name);
     return moon;
-    var icon = $('.icon').html('./images/waxing-gibbous.png');
-    return icon
-    // switch(moon) {
-    //   case 'waxing gibbous':
-    //       $('#icon').html('<img src="./images/waxing-gibbous.png" />')
-    //       break;
-    //   case 'waning gibbous':
-    //       $('#icon').html('<img src="./images/waning-gibbous.png" />')
-    //       break;
-    //   case 'waxing crescent':
-    //       $('#icon').html('<img src="./images/waxing-crescent.png" />')
-    //       break;
-    //   case 'waning crescent':
-    //       $('#icon').html('<img src="./images/waning-crescent.png" />')
-    //       break;
-    //   case 'full moon':
-    //       $('#icon').html('<img src="./images/full.png" />')
-    //       break;
-    //   case 'new moon':
-    //       $('#icon').html('<img src="./images/new.png" />')
-    //       break;
-    //   case 'first moon':
-    //       $('#icon').html('<img src="./images/first.png" />')
-    //       break;
-    //   default:
-    //       default $('#icon').html('<img src="./images/last.png" />')
-    //   }
+    switch(moon) {
+      case 'waxing gibbous':
+          $('#icon').html('<img src="./images/waxing-gibbous.png" />')
+          break;
+      case 'waning gibbous':
+          $('#icon').html('<img src="./images/waning-gibbous.png" />')
+          break;
+      case 'waxing crescent':
+          $('#icon').html('<img src="./images/waxing-crescent.png" />')
+          break;
+      case 'waning crescent':
+          $('#icon').html('<img src="./images/waning-crescent.png" />')
+          break;
+      case 'full moon':
+          $('#icon').html('<img src="./images/full.png" />')
+          break;
+      case 'new moon':
+          $('#icon').html('<img src="./images/new.png" />')
+          break;
+      case 'first moon':
+          $('#icon').html('<img src="./images/first.png" />')
+          break;
+      default:
+          default $('#icon').html('<img src="./images/last.png" />')
+      }
     });
 
   };
