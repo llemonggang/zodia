@@ -20,7 +20,7 @@ function apodImage() {
   })
 }
 
-function phaseMoon() {
+function getDate() {
   var today = new Date();
   var dd = today.getDate();
   var mm = today.getMonth()+1;
@@ -37,6 +37,9 @@ function phaseMoon() {
   console.log(today);
 
   var output = document.getElementById("out");
+}
+
+function phaseMoon() {
 
   if (!navigator.geolocation){
     output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
@@ -50,6 +53,7 @@ function phaseMoon() {
 
     $('.preview').on('click', function(e) {
       e.preventDefault()
+      getDate(today)
       $.ajax({
       url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
       date: today,
