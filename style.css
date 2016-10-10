@@ -9,7 +9,7 @@
 }
 
 .icon {
-  width: 10%;
-  height: 10%;
+  width: 30px;
+  height: auto;
   background-size: contain;
 }
