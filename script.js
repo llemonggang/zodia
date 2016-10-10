@@ -49,7 +49,7 @@ function phaseMoon() {
             var output = document.getElementById("out");
           $.ajax({
           url:'https://api.aerisapi.com/sunmoon/moonphases/?p=' + latitude + ',' + longitude + '&from=:' + today + '&to=:' + today + '&client_id=id5zV9deaqOeGuK3mYadq&client_secret=Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
-          // today: today,
+          today: today,
           latitude: latitude,
           longitude: longitude
           }).done(function(data) {
