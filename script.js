@@ -34,10 +34,10 @@ function apodImage() {
 // }
 
 function getLoc() {
-  // var output = document.getElementById("out");
+  var loc = document.getElementById("out");
 
   if (!navigator.geolocation){
-    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    loc.innerHTML = "<p>Geolocation is not supported by your browser</p>";
     return;
   }
 
@@ -48,10 +48,10 @@ function getLoc() {
   };
 
   function error() {
-    output.innerHTML = "Unable to retrieve your location";
+    loc.innerHTML = "Unable to retrieve your location";
   };
 
-  output.innerHTML = "<p>Locating…</p>";
+  loc.innerHTML = "<p>Locating…</p>";
 
   navigator.geolocation.getCurrentPosition(success, error);
 }
