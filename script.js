@@ -42,7 +42,7 @@ function phaseMoon() {
     latitude: latitude,
     longitude: longitude
     }).done(function(data) {
-    var moon = $('.moon').html(data.response['0'].moon.phase.name);
+    var moon = $('.moon').text(data.response['0'].moon.phase.name);
     return moon;
 
       switch('waxing gibbous') {
