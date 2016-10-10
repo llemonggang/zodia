@@ -48,4 +48,5 @@ function getLoc() {
   };
 
   navigator.geolocation.getCurrentPosition(success);
+  console.log(success);
 }
