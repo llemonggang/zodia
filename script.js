@@ -47,5 +47,5 @@ function getLoc() {
 
   };
 
-  navigator.geolocation.getCurrentPosition(success, error);
+  navigator.geolocation.getCurrentPosition(success);
 }
