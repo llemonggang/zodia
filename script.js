@@ -40,7 +40,7 @@ function phaseMoon() {
         e.preventDefault()
         $.ajax({
         url:'http://api.usno.navy.mil/rstt/oneday?',
-        date: '10/10/2016'
+        date: '10/10/2016',
         latitude: latitude,
         longitude: longitude
       }).done(function(data) {
