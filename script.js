@@ -5,16 +5,15 @@ $( document ).ready(function() {
 });
 
 function apodImage() {
-  $('.preview').on('click', function(e) {
-    e.preventDefault()
+
     $.ajax({
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
       var img = $('.image').html('<img src="' + data.url + '" />')
       var explanation = $('.explanation').text(data.explanation)
       return explanation;
-  });
-  })
+    });
+
 }
 
 function phaseMoon() {
