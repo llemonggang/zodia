@@ -2,8 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
     apodImage()
     phaseMoon()
-
-
+    getDate()
 
 });
 
