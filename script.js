@@ -21,6 +21,21 @@ function apodImage() {
 }
 
 function phaseMoon() {
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1;
+
+  var yyyy = today.getFullYear();
+  if(dd<10){
+      dd='0'+dd
+  }
+  if(mm<10){
+      mm='0'+mm
+  }
+  var today = dd+'/'+mm+'/'+yyyy;
+  document.getElementById("DATE").value = today;
+  console.log(today);
+
   var output = document.getElementById("out");
 
   if (!navigator.geolocation){
@@ -37,7 +52,7 @@ function phaseMoon() {
       e.preventDefault()
       $.ajax({
       url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
-      date: '10/10/2016',
+      date: today,
       latitude: latitude,
       longitude: longitude
     }).done(function(data) {
