@@ -42,7 +42,7 @@ function phaseMoon() {
           mm='0'+mm
       }
       var today = dd+'/'+mm+'/'+yyyy;
-      document.getElementById("date").value = today;
+      // document.getElementById("date").value = today;
       console.log(today);
 
         $('.preview').on('click', function(e) {
