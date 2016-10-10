@@ -53,7 +53,7 @@ function phaseMoon() {
           latitude: latitude,
           longitude: longitude
           }).done(function(data) {
-          console.log(data);
+          console.log(data.response['0'].moon.phase.name);
           });
         });
 
