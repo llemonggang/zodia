@@ -57,7 +57,4 @@ function phaseMoon() {
         });
 
   };
-
-  // navigator.geolocation.getCurrentPosition(success);
-
 }
