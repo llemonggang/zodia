@@ -49,7 +49,6 @@ function phaseMoon() {
             var output = document.getElementById("out");
           $.ajax({
           url:'https://api.aerisapi.com/sunmoon/moonphases/?p=austin,tx&client_id=id5zV9deaqOeGuK3mYadq&client_secret=Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
-          method: 'GET',
           // today: today,
           // latitude: latitude,
           // longitude: longitude
