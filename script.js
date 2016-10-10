@@ -34,7 +34,7 @@ function apodImage() {
 // }
 
 function getLoc() {
-  var output = document.getElementById("out");
+  // var output = document.getElementById("out");
 
   if (!navigator.geolocation){
     output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
