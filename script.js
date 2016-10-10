@@ -70,8 +70,9 @@ function phaseMoon() {
       case 'first moon':
           $('.icon').html('<img src="./images/first.png" />')
           break;
-      default:
-          return $('.icon').html('<img src="./images/last.png" />')
+      case 'last moon':
+          $('.icon').html('<img src="./images/last.png" />')
+          break;
       }
     });
 
