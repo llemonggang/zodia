@@ -40,7 +40,7 @@ function phaseMoon() {
     var today = dd+'/'+mm+'/'+yyyy;
     console.log(today);
 
-            var output = document.getElementById("out");
+          var output = document.getElementById("out");
           $.ajax({
           url:'https://api.aerisapi.com/sunmoon/?p=' + latitude + ',' + longitude + '&to=:' + today + '&client_id=id5zV9deaqOeGuK3mYadq&client_secret=Yfvc6cceJpNkt5aqmJB5i30VV1WfmS6z75d3hWRy',
           today: today,
