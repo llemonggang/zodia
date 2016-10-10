@@ -48,7 +48,7 @@ function phaseMoon() {
           e.preventDefault()
             var output = document.getElementById("out");
           $.ajax({
-          url:'https://api.usno.navy.mil/rstt/oneday?date=' + today + '&coords=' + latitude + ',' + longitude,
+          url:'http://api.usno.navy.mil/rstt/oneday?date=' + today + '&coords=' + latitude + ',' + longitude,
           today: today,
           latitude: latitude,
           longitude: longitude
