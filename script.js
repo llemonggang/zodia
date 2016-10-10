@@ -48,10 +48,10 @@ function phaseMoon() {
           e.preventDefault()
             var output = document.getElementById("out");
           $.ajax({
-          url:'http://api.usno.navy.mil/rstt/oneday?date=' + today + '&coords=' + latitude + ',' + longitude,
-          today: today,
-          latitude: latitude,
-          longitude: longitude
+          url:'https://api.aerisapi.com/sunmoon/moonphases/austin,tx',
+          // today: today,
+          // latitude: latitude,
+          // longitude: longitude
           }).done(function(data) {
           console.log(data);
           });
