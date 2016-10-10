@@ -46,7 +46,7 @@ function phaseMoon() {
 
     console.log(moon);
 
-      if (moon.text() === 'waxing gibbous') {
+      if (moon.html() === 'waxing gibbous') {
         console.log('working');
       }
 
