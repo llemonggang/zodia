@@ -37,7 +37,7 @@ function phaseMoon() {
           mm='0'+mm
       }
     var today = dd+'/'+mm+'/'+yyyy;
-    console.log(today);
+    var date = $('#date').html(today);
 
           // var output = document.getElementById("out");
     $.ajax({
