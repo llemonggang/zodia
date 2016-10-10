@@ -46,7 +46,7 @@ function phaseMoon() {
       }).done(function(data) {
         console.log(data);
         });
-      }
+      });
 
     };
 
