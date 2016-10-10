@@ -52,7 +52,7 @@ function phaseMoon() {
       e.preventDefault()
 
         var output = document.getElementById("out");
-      }
+
       $.ajax({
       url:'https://api.usno.navy.mil/rstt/oneday?date=' + date + '&coords=' + latitude + ',' + longitude,
       date: today,
