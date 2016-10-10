@@ -51,7 +51,8 @@ function phaseMoon() {
           latitude: latitude,
           longitude: longitude
           }).done(function(data) {
-          console.log(data.response['0'].moon.phase.name);
+          var moon = $('.moon').html(data.response['0'].moon.phase.name);
+          return moon;
           });
         });
 
