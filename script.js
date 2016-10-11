@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    apodImage()
+    // apodImage()
     phaseMoon()
 });
 
@@ -8,9 +8,8 @@ function apodImage() {
     $.ajax({
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
-      var img = $('#image').html('<img src="' + data.url + '" />')
+    $('#image').html('<img src="' + data.url + '" />');
     });
-
 }
 
 function phaseMoon() {
@@ -46,31 +45,30 @@ function phaseMoon() {
 
       switch(moon.html()) {
         case 'waxing gibbous':
-            $('.icon').html('<img src="./images/waxing-gibbous.png" />');
+            $('.icon').html('<img src="./images/waxing-gibbous.png" class="icon" />');
             break;
         case 'waning gibbous':
-            $('.icon').html('<img src="./images/waning-gibbous.png" />')
+            $('.icon').html('<img src="./images/waning-gibbous.png" class="icon" />')
             break;
         case 'waxing crescent':
-            $('.icon').html('<img src="./images/waxing-crescent.png" />')
+            $('.icon').html('<img src="./images/waxing-crescent.png" class="icon" />')
             break;
         case 'waning crescent':
-            $('.icon').html('<img src="./images/waning-crescent.png" />')
+            $('.icon').html('<img src="./images/waning-crescent.png" class="icon" />')
             break;
         case 'full moon':
-            $('.icon').html('<img src="./images/full.png" />')
+            $('.icon').html('<img src="./images/full.png" class="icon" />')
             break;
         case 'new moon':
-            $('.icon').html('<img src="./images/new.png" />')
+            $('.icon').html('<img src="./images/new.png" class="icon" />')
             break;
         case 'first moon':
-            $('.icon').html('<img src="./images/first.png" />')
+            $('.icon').html('<img src="./images/first.png" class="icon" />')
             break;
         case 'last moon':
-            $('.icon').html('<img src="./images/last.png" />')
+            $('.icon').html('<img src="./images/last.png" class="icon"/>')
             break;
         }
-
     });
 
   };
