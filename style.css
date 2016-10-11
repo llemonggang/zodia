@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.container-fluid {
+.container {
   padding: 40px;
 }
 
@@ -26,11 +26,6 @@ body {
   font-size: 20px
 }
 
-.horoscope {
-  width: 20px;
-  height: 20px;
-}
-
 .circle-container a {
     display: block;
     position: absolute;
@@ -39,7 +34,7 @@ body {
     margin: -2em;
 }
 
-.circle-container img { display: block; width: 50%; }
+.circle-container img { display: block; width: 40%; }
 .deg0 { transform: translate(4.5em); }
 .deg30 { transform: rotate(30deg) translate(4.5em) rotate(-30deg); }
 .deg60 { transform: rotate(60deg) translate(4.5em) rotate(-60deg); }

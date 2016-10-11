@@ -78,5 +78,17 @@ function horoscope() {
   url:'http://www.api.littleastro.com/restserver/index.php/api/horoscope/readings/format/json',
   }).done(function(data) {
   console.log(data);
+  var cancer = data[3].Daily_Horoscope;
+  var leo = data[4].Daily_Horoscope;
+  var virgo = data[5].Daily_Horoscope;
+  var libra = data[6].Daily_Horoscope;
+  var scorpio = data[7].Daily_Horoscope;
+  var sagittarius = data[8].Daily_Horoscope;
+  var capricorn = data[9].Daily_Horoscope;
+  var aquarius = data[10].Daily_Horoscope;
+  var pisces = data[11].Daily_Horoscope;
+  var aries = data[12].Daily_Horoscope;
+  var taurus = data[1].Daily_Horoscope;
+  var gemini = data[2].Daily_Horoscope;
   });
 }
