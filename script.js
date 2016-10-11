@@ -1,10 +1,10 @@
 $( document ).ready(function() {
     // apodImage()
     phaseMoon()
+    horoscope()
 });
 
 function apodImage() {
-
     $.ajax({
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
@@ -70,7 +70,13 @@ function phaseMoon() {
             break;
         }
     });
-
   };
+}
 
+function horoscope() {
+  $.ajax({
+  url:'http://www.api.littleastro.com/restserver/index.php/api/horoscope/readings/format/json',
+  }).done(function(data) {
+  console.log(data);
+  });
 }
