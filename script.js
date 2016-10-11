@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.daily').hide()
     // apodImage()
     phaseMoon()
     horoscope()
@@ -78,17 +79,114 @@ function horoscope() {
   url:'http://www.api.littleastro.com/restserver/index.php/api/horoscope/readings/format/json',
   }).done(function(data) {
   console.log(data);
-  var cancer = data[3].Daily_Horoscope;
-  var leo = data[4].Daily_Horoscope;
-  var virgo = data[5].Daily_Horoscope;
-  var libra = data[6].Daily_Horoscope;
-  var scorpio = data[7].Daily_Horoscope;
-  var sagittarius = data[8].Daily_Horoscope;
-  var capricorn = data[9].Daily_Horoscope;
-  var aquarius = data[10].Daily_Horoscope;
-  var pisces = data[11].Daily_Horoscope;
-  var aries = data[12].Daily_Horoscope;
-  var taurus = data[1].Daily_Horoscope;
-  var gemini = data[2].Daily_Horoscope;
+
+    $('.cancer').click(function(e) {
+      e.preventDefault()
+      var cancer = data[3].Daily_Horoscope;
+      $('.daily').html('<p>' + cancer + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.leo').click(function(e) {
+      e.preventDefault()
+      var leo = data[4].Daily_Horoscope;
+      $('.daily').html('<p>' + leo + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.virgo').click(function(e) {
+      e.preventDefault()
+      var virgo = data[5].Daily_Horoscope;
+      $('.daily').html('<p>' + virgo + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.libra').click(function(e) {
+      e.preventDefault()
+      var libra = data[6].Daily_Horoscope;
+      $('.daily').html('<p>' + libra + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.scorpio').click(function(e) {
+      e.preventDefault()
+      var scorpio = data[7].Daily_Horoscope;
+      $('.daily').html('<p>' + scorpio + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.sagittarius').click(function(e) {
+      e.preventDefault()
+      var sagittarius = data[8].Daily_Horoscope;
+      $('.daily').html('<p>' + sagittarius + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.capricorn').click(function(e) {
+      e.preventDefault()
+      var capricorn = data[9].Daily_Horoscope;
+      $('.daily').html('<p>' + capricorn + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.aquarius').click(function(e) {
+      e.preventDefault()
+      var aquarius = data[10].Daily_Horoscope;
+      $('.daily').html('<p>' + aquarius + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.pisces').click(function(e) {
+      e.preventDefault()
+      var pisces = data[11].Daily_Horoscope;
+      $('.daily').html('<p>' + pisces + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.aries').click(function(e) {
+      e.preventDefault()
+      var aries = data[0].Daily_Horoscope;
+      $('.daily').html('<p>' + aries + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.taurus').click(function(e) {
+      e.preventDefault()
+      var taurus = data[1].Daily_Horoscope;
+      $('.daily').html('<p>' + taurus + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
+    $('.gemini').click(function(e) {
+      e.preventDefault()
+      var gemini = data[2].Daily_Horoscope;
+      $('.daily').html('<p>' + gemini + '<p/>')
+      $('.circle-container').hide();
+      $('.daily').show();
+      console.log('working');
+
+    })
   });
 }
