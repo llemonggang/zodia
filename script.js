@@ -9,6 +9,7 @@ $( document ).ready(function() {
     // apodImage()
     phaseMoon()
     horoscope()
+    infoBox( )
 });
 
 function apodImage() {
@@ -235,4 +236,14 @@ function horoscope() {
       $('.back').show()
     })
   });
+}
+
+function infoBox() {
+  $('.moon-icon').click(function() {
+        $('.moonphase').show()
+    })
+  $('.sun-icon').click(function() {
+    $('.sunrise').show()
+    $('.sunset').show()
+  })
 }
