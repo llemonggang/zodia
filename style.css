@@ -51,7 +51,7 @@ body {
 
 .circle-container {
   position: absolute;
-  left: 50%;
+  left: 47%;
   top: 45%;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 
 .site-name {
   margin-top: 22%;
-  margin-left: 7%;
+  margin-left: 5%;
   font-family: 'Zeyada', cursive;
   font-size: 80px;
 }
