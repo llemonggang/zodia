@@ -1,7 +1,9 @@
 $( document ).ready(function() {
     $('.daily').hide()
     $('.back').hide()
-    $('.bar').hide()
+    $('.navbar').hide()
+    $('.moonphase').hide()
+    $('.text').hide()
     // apodImage()
     phaseMoon()
     horoscope()
@@ -44,7 +46,7 @@ function phaseMoon() {
     longitude: longitude
     }).done(function(data) {
       console.log(data);
-    var moon = $('.moon').text(data.response['0'].moon.phase.name);
+    var moon = $('.moonphase').text(data.response['0'].moon.phase.name);
     var sunrise = ($('.sunrise').text(data.response['0'].sun.riseISO)).text();
     var sunset = ($('.sunset').text(data.response['0'].sun.setISO)).text();
     var rise = $('.sunrise').html('<p>rise ' + sunrise.substr(11, 8));
@@ -52,28 +54,28 @@ function phaseMoon() {
 
       switch(moon.html()) {
         case 'waxing gibbous':
-            $('.icon').html('<img src="./images/waxing-gibbous.png" class="icon" />');
+            $('.moon-icon').html('<img src="./images/waxing-gibbous.png" class="moon-icon" />');
             break;
         case 'waning gibbous':
-            $('.icon').html('<img src="./images/waning-gibbous.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/waning-gibbous.png" class="moon-icon" />')
             break;
         case 'waxing crescent':
-            $('.icon').html('<img src="./images/waxing-crescent.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/waxing-crescent.png" class="moon-icon" />')
             break;
         case 'waning crescent':
-            $('.icon').html('<img src="./images/waning-crescent.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/waning-crescent.png" class="moon-icon" />')
             break;
         case 'full moon':
-            $('.icon').html('<img src="./images/full.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/full.png" class="moon-icon" />')
             break;
         case 'new moon':
-            $('.icon').html('<img src="./images/new.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/new.png" class="moon-icon" />')
             break;
         case 'first moon':
-            $('.icon').html('<img src="./images/first.png" class="icon" />')
+            $('.moon-icon').html('<img src="./images/first.png" class="moon-icon" />')
             break;
         case 'last moon':
-            $('.icon').html('<img src="./images/last.png" class="icon"/>')
+            $('.moon-icon').html('<img src="./images/last.png" class="moon-icon"/>')
             break;
         }
     });
@@ -91,6 +93,8 @@ function horoscope() {
       $('.sun-sign').html('<p>' + data[3].Sign + '</br>' + data[3].Info + '<p/>')
       $('.daily').html('<p>' + cancer + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navnavbar').show()
       $('.sun-sign').show()
       $('.sun-sign').show()
       $('.daily').show();
@@ -102,6 +106,8 @@ function horoscope() {
       $('.sun-sign').html('<p>' + data[4].Sign + '</br>' + data[4].Info + '</p>')
       $('.daily').html('<p>' + leo + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -112,6 +118,8 @@ function horoscope() {
       $('.daily').html('<p>' + virgo + '<p/>')
       $('.sun-sign').html('<p>' + data[5].Sign + '</br>' + data[5].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -122,6 +130,8 @@ function horoscope() {
       $('.daily').html('<p>' + libra + '<p/>')
       $('.sun-sign').html('<p>' + data[6].Sign + '</br>' + data[6].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -132,6 +142,8 @@ function horoscope() {
       $('.daily').html('<p>' + scorpio + '<p/>')
       $('.sun-sign').html('<p>' + data[7].Sign + '</br>' + data[7].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -142,6 +154,8 @@ function horoscope() {
       $('.daily').html('<p>' + sagittarius + '<p/>')
       $('.sun-sign').html('<p>' + data[8].Sign + '</br>' + data[8].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -152,6 +166,8 @@ function horoscope() {
       $('.daily').html('<p>' + capricorn + '<p/>')
       $('.sun-sign').html('<p>' + data[9].Sign + '</br>' + data[9].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -162,6 +178,8 @@ function horoscope() {
       $('.daily').html('<p>' + aquarius + '<p/>')
       $('.sun-sign').html('<p>' + data[10].Sign + '</br>' + data[10].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -172,6 +190,8 @@ function horoscope() {
       $('.daily').html('<p>' + pisces + '<p/>')
       $('.sun-sign').html('<p>' + data[11].Sign + '</br>' + data[11].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -182,6 +202,8 @@ function horoscope() {
       $('.daily').html('<p>' + aries + '<p/>')
       $('.sun-sign').html('<p>' + data[0].Sign + '</br>' + data[0].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -192,6 +214,8 @@ function horoscope() {
       $('.daily').html('<p>' + taurus + '<p/>')
       $('.sun-sign').html('<p>' + data[1].Sign + '</br>' + data[1].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
@@ -202,6 +226,8 @@ function horoscope() {
       $('.daily').html('<p>' + gemini + '<p/>')
       $('.sun-sign').html('<p>' + data[2].Sign + '</br>' + data[2].Info + '<p/>')
       $('.circle-container').hide();
+      $('.site-name').hide()
+      $('.navbar').show()
       $('.sun-sign').show()
       $('.daily').show();
       $('.back').show()
