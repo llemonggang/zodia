@@ -94,3 +94,10 @@ a:hover {
 .apod {
   margin-left: -90%;
 }
+
+.site-name {
+  margin-top: 22%;
+  margin-left: -5%;
+  font-family: 'Zeyada', cursive;
+  font-size: 80px;
+}
