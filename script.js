@@ -1,7 +1,8 @@
 $( document ).ready(function() {
     $('.daily').hide()
     $('.back').hide()
-    apodImage()
+    $('.bar').hide()
+    // apodImage()
     phaseMoon()
     horoscope()
 });
