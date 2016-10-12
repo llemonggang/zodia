@@ -30,25 +30,26 @@ body {
 .circle-container input {
     display: block;
     position: absolute;
-    top: 50%; left: 50%;
-    width: 2em; height: 2em;
+    /*top: 50%; left: 50%;*/
+    width: 6em; height: 6em;
     /*margin: -2em;*/
 }
 
 .circle-container {
-  display: block;
-  width: 10%;
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }
 
-.deg0 { transform: translate(4.5em); }
-.deg30 { transform: rotate(30deg) translate(4.5em) rotate(-30deg); }
-.deg60 { transform: rotate(60deg) translate(4.5em) rotate(-60deg); }
-.deg90 { transform: rotate(90deg) translate(4.5em) rotate(-90deg); }
-.deg120 { transform: rotate(120deg) translate(4.5em) rotate(-120deg); }
-.deg150 { transform: rotate(150deg) translate(4.5em) rotate(-150deg); }
-.deg180 { transform: translate(-4.5em); }
-.deg210 { transform: rotate(210deg) translate(4.5em) rotate(-210deg); }
-.deg240 { transform: rotate(240deg) translate(4.5em) rotate(-240deg); }
-.deg270 { transform: rotate(270deg) translate(4.5em) rotate(-270deg); }
-.deg300 { transform: rotate(300deg) translate(4.5em) rotate(-300deg); }
-.deg330 { transform: rotate(330deg) translate(4.5em) rotate(-330deg); }
+.deg0 { transform: translate(24em); }
+.deg30 { transform: rotate(30deg) translate(24em) rotate(-30deg); }
+.deg60 { transform: rotate(60deg) translate(24em) rotate(-60deg); }
+.deg90 { transform: rotate(90deg) translate(24em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(24em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(24em) rotate(-150deg); }
+.deg180 { transform: translate(-24em); }
+.deg210 { transform: rotate(210deg) translate(24em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(24em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(24em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(24em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(24em) rotate(-330deg); }
