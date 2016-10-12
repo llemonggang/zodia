@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $('.daily').hide()
     $('.back').hide()
-    // apodImage()
+    apodImage()
     phaseMoon()
     horoscope()
 });
@@ -10,7 +10,7 @@ function apodImage() {
     $.ajax({
     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
     }).done(function(data) {
-    $('#image').html('<img src="' + data.url + '" />');
+    $('#image').html('<img src="' + data.url + '" id="image" />');
     });
 }
 

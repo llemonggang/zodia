@@ -18,8 +18,8 @@ body {
 }
 
 .sun-icon {
-  width: 120px;
-  height: 110px;
+  width: 140px;
+  height: 130px;
 }
 
 #date {
@@ -32,7 +32,7 @@ body {
   font-size: 20px
 }
 
-.sun {
+.text {
   font-size: 20px;
   line-height: 3px;
 }
@@ -40,6 +40,7 @@ body {
 .sun-phase {
   margin-left: -90%;
   padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .circle-container input {
@@ -77,4 +78,19 @@ body {
 
 a:hover {
   color: #AFFFC7;
+}
+
+#image {
+  height: 35%;
+  width: 35%;
+  background-size: contain;
+  border-radius: 50%;
+  margin-left: -10%;
+  /*border-style: dotted;
+  border-color: white;
+  border-width: 1px;*/
+}
+
+.apod {
+  margin-left: -90%;
 }
