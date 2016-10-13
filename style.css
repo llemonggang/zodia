@@ -25,6 +25,21 @@ body {
 a:hover {
   color: #AFFFC7;
 }
+a:link {
+    color: #AFFFC7;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #AFFFC7;
+}
+
+a:active {
+    color: white;
+}
 
 ul {
   margin-top: -1.5%;
