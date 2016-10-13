@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $('.daily').hide()
+    $('.daily-blurb').hide()
     $('.back').hide()
     $('.navbar').hide()
     $('.moonphase').hide()
@@ -106,7 +106,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + cancer.Love + '</p>')
       $('.sun-sign').html('<p class="current">' + cancer.Sign + '<p/>')
-      $('.daily').html('<p>' + cancer.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + cancer.Daily_Horoscope + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -114,29 +114,29 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.sun-sign').show()
-      $('.daily').show()
+      $('.daily-blurb').show()
       $('.back').show()
     })
 
     $('.leo').click(function(e) {
-      $('.daily').hide()
+      $('.daily-blurb').hide()
       $('.love-blurb').html('<p>' + leo.Love + '</p>')
       $('.sun-sign').html('<p class="current">' + leo.Sign + '</p>')
-      $('.daily').html('<p>' + leo.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + leo.Daily_Horoscope + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.virgo').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + virgo.Love + '</p>')
-      $('.daily').html('<p>' + virgo.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + virgo.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + virgo.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -144,14 +144,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.libra').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + libra.Love + '</p>')
-      $('.daily').html('<p>' + libra.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + libra.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + libra.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -159,14 +159,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.scorpio').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + scorpio.Love + '</p>')
-      $('.daily').html('<p>' + scorpio.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + scorpio.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + scorpio.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -174,14 +174,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.sagittarius').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + sagittarius.Love + '</p>')
-      $('.daily').html('<p>' + sagittarius.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + sagittarius.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + sagittarius.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -189,14 +189,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.capricorn').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + capricorn.Love + '</p>')
-      $('.daily').html('<p>' + capricorn.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + capricorn.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + capricorn.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -204,14 +204,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.aquarius').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + aquarius.Love + '</p>')
-      $('.daily').html('<p>' + aquarius.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + aquarius.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + aquarius.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -219,14 +219,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.pisces').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + pisces.Love + '</p>')
-      $('.daily').html('<p>' + pisces.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + pisces.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + pisces.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -234,14 +234,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.aries').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + aries.Love + '</p>')
-      $('.daily').html('<p>' + aries.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + aries.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + aries.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -249,14 +249,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.taurus').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + taurus.Love + '</p>')
-      $('.daily').html('<p>' + taurus.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + taurus.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + taurus.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -264,14 +264,14 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
 
     $('.gemini').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + gemini.Love + '</p>')
-      $('.daily').html('<p>' + gemini.Daily_Horoscope + '<p/>')
+      $('.daily-blurb').html('<p>' + gemini.Daily_Horoscope + '<p/>')
       $('.sun-sign').html('<p class="current">' + gemini.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -279,15 +279,56 @@ function horoscope() {
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.daily').show();
+      $('.daily-blurb').show();
       $('.back').show()
     })
-
+    
     $('.love-icon').click(function(e) {
       e.preventDefault()
-      $('.daily').hide()
+      $('.daily-blurb').hide()
+      $('.wellness-blurb').hide()
+      $('.career-blurb').hide()
+      $('.sunrise').hide()
+      $('.sunset').hide()
+      $('.moonphase').hide()
       $('.love-blurb').show()
-      $('.daily').html($('.current').Love)
+      $('.love-blurb').html($('.current').Love)
+    })
+
+    $('.daily-icon').click(function(e) {
+      e.preventDefault()
+      $('.love-blurb').hide()
+      $('.wellness-blurb').hide()
+      $('.career-blurb').hide()
+      $('.sunrise').hide()
+      $('.sunset').hide()
+      $('.moonphase').hide()
+      $('.daily-blurb').show()
+      $('.daily-blurb').html($('.current').Daily_Horoscope)
+    })
+
+    $('.wellness-icon').click(function(e) {
+      e.preventDefault()
+      $('.love-blurb').hide()
+      $('.daily-blurb').hide()
+      $('.career-blurb').hide()
+      $('.sunrise').hide()
+      $('.sunset').hide()
+      $('.moonphase').hide()
+      $('.wellness-blurb').show()
+      $('.wellness-blurb').html($('.current').Wellness)
+    })
+
+    $('.career-icon').click(function(e) {
+      e.preventDefault()
+      $('.love-blurb').hide()
+      $('.daily-blurb').hide()
+      $('.wellness-blurb').hide()
+      $('.sunrise').hide()
+      $('.sunset').hide()
+      $('.moonphase').hide()
+      $('.career-blurb').show()
+      $('.career-blurb').html($('.current').Career)
     })
 
   })
