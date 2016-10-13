@@ -47,7 +47,6 @@ function phaseMoon() {
     latitude: latitude,
     longitude: longitude
     }).done(function(data) {
-      console.log(data);
     var moon = $('.moonphase').text(data.response['0'].moon.phase.name);
     var sunrise = ($('.sunrise').text(data.response['0'].sun.riseISO)).text();
     var sunset = ($('.sunset').text(data.response['0'].sun.setISO)).text();
@@ -87,7 +86,8 @@ function phaseMoon() {
 function horoscope() {
   $.ajax({
   url:'https://zodia.herokuapp.com',
-  }).done(function(data) {
+}).done(function(data) {
+    console.log(data);
 
     $('.cancer').click(function(e) {
       e.preventDefault()
