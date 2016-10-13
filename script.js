@@ -282,7 +282,7 @@ function horoscope() {
       $('.daily-blurb').show();
       $('.back').show()
     })
-    
+
     $('.love-icon').click(function(e) {
       e.preventDefault()
       $('.daily-blurb').hide()
@@ -315,8 +315,8 @@ function horoscope() {
       $('.sunrise').hide()
       $('.sunset').hide()
       $('.moonphase').hide()
-      $('.wellness-blurb').show()
       $('.wellness-blurb').html($('.current').Wellness)
+      $('.wellness-blurb').show()
     })
 
     $('.career-icon').click(function(e) {
@@ -327,8 +327,8 @@ function horoscope() {
       $('.sunrise').hide()
       $('.sunset').hide()
       $('.moonphase').hide()
-      $('.career-blurb').show()
       $('.career-blurb').html($('.current').Career)
+      $('.career-blurb').show()
     })
 
   })
@@ -337,9 +337,12 @@ function horoscope() {
 function infoBox() {
   $('.moon-icon').click(function() {
         $('.moonphase').show()
+        $('.sunrise').hide()
+        $('.sunset').hide()
     })
   $('.sun-icon').click(function() {
     $('.sunrise').show()
     $('.sunset').show()
+    $('.moonphase').hide()
   })
 };

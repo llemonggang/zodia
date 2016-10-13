@@ -45,6 +45,10 @@ body {
   margin-left: -10px;
 }
 
+.moonphase {
+  margin-top: 2.2%;
+}
+
 a:hover {
   color: #AFFFC7;
 }
