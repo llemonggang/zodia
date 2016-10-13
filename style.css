@@ -1,6 +1,6 @@
 body {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   background-image: url('./images/apod.jpg');
   background-size: cover;
@@ -24,6 +24,23 @@ body {
 
 .love-icon {
   width: 50px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.daily-icon {
+  width: 50px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.wellness-icon {
+  width: 60px;
+  height: auto;
+}
+
+.work-icon {
+  width: 60px;
   height: auto;
   margin-left: -10px;
 }
@@ -67,10 +84,12 @@ li {
 
 .sun-sign {
   margin-top: -10%;
+  margin-left: -60%;
+  font-family: 'Zeyada', cursive;
 }
 
 .site-name {
-  margin-top: 15%;
+  margin-top: 12%;
   margin-left: 3%;
   font-family: 'Zeyada', cursive;
   font-size: 80px;

@@ -105,7 +105,7 @@ function horoscope() {
     $('.cancer').click(function(e) {
       e.preventDefault()
       $('.love-blurb').html('<p>' + cancer.Love + '</p>')
-      $('.sun-sign').html('<p class="current">' + cancer.Sign + '</br>' + cancer.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + cancer.Sign + '<p/>')
       $('.daily').html('<p>' + cancer.Daily_Horoscope + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -121,7 +121,7 @@ function horoscope() {
     $('.leo').click(function(e) {
       $('.daily').hide()
       $('.love-blurb').html('<p>' + leo.Love + '</p>')
-      $('.sun-sign').html('<p class="current">' + leo.Sign + '</br>' + leo.Info + '</p>')
+      $('.sun-sign').html('<p class="current">' + leo.Sign + '</p>')
       $('.daily').html('<p>' + leo.Daily_Horoscope + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
@@ -137,7 +137,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + virgo.Love + '</p>')
       $('.daily').html('<p>' + virgo.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + virgo.Sign + '</br>' + virgo.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + virgo.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -152,7 +152,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + libra.Love + '</p>')
       $('.daily').html('<p>' + libra.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + libra.Sign + '</br>' + libra.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + libra.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -167,7 +167,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + scorpio.Love + '</p>')
       $('.daily').html('<p>' + scorpio.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + scorpio.Sign + '</br>' + scorpio.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + scorpio.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -182,7 +182,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + sagittarius.Love + '</p>')
       $('.daily').html('<p>' + sagittarius.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + sagittarius.Sign + '</br>' + sagittarius.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + sagittarius.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -197,7 +197,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + capricorn.Love + '</p>')
       $('.daily').html('<p>' + capricorn.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + capricorn.Sign + '</br>' + capricorn.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + capricorn.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -212,7 +212,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + aquarius.Love + '</p>')
       $('.daily').html('<p>' + aquarius.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + aquarius.Sign + '</br>' + aquarius.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + aquarius.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -227,7 +227,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + pisces.Love + '</p>')
       $('.daily').html('<p>' + pisces.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + pisces.Sign + '</br>' + pisces.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + pisces.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -242,7 +242,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + aries.Love + '</p>')
       $('.daily').html('<p>' + aries.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + aries.Sign + '</br>' + aries.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + aries.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -257,7 +257,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + taurus.Love + '</p>')
       $('.daily').html('<p>' + taurus.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + taurus.Sign + '</br>' + taurus.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + taurus.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -272,7 +272,7 @@ function horoscope() {
       e.preventDefault()
       $('.love-blurb').html('<p>' + gemini.Love + '</p>')
       $('.daily').html('<p>' + gemini.Daily_Horoscope + '<p/>')
-      $('.sun-sign').html('<p class="current">' + gemini.Sign + '</br>' + gemini.Info + '<p/>')
+      $('.sun-sign').html('<p class="current">' + gemini.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
       $('.love-icon').show()
@@ -287,7 +287,7 @@ function horoscope() {
       e.preventDefault()
       $('.daily').hide()
       $('.love-blurb').show()
-      $('.daily').html($('.current').sign)
+      $('.daily').html($('.current').Love)
     })
 
   })
