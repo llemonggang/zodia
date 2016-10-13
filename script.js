@@ -85,7 +85,7 @@ function phaseMoon() {
 
 function horoscope() {
   $.ajax({
-  url:'https://zodia.herokuapp.com',
+  url:'https://zodia.herokuapp.com/zodiac',
 }).done(function(data) {
     console.log(data);
 
