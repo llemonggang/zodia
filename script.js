@@ -5,7 +5,6 @@ $( document ).ready(function() {
     $('.moonphase').hide()
     $('.sunrise').hide()
     $('.sunset').hide()
-    // $('.info').hide()
     // apodImage()
     phaseMoon()
     horoscope()
@@ -87,7 +86,7 @@ function phaseMoon() {
 
 function horoscope() {
   $.ajax({
-  url:'http://www.api.littleastro.com/restserver/index.php/api/horoscope/readings/format/json',
+  url:'https://zodia.herokuapp.com',
   }).done(function(data) {
 
     $('.cancer').click(function(e) {
