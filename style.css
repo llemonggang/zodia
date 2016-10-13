@@ -27,8 +27,12 @@ a:hover {
 }
 
 input, input:focus{
-  outline:0px !important;
-  -webkit-appearance:none;
+        border-width: 0px;
+        outline:0; /* I have also tried outline:none */
+        -webkit-appearance:none;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
 }
 
 ul {
