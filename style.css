@@ -25,7 +25,7 @@ body {
 a:hover {
   color: #AFFFC7;
 }
-a:link {
+/*a:link {
   color: #AFFFC7;
 }
 
@@ -39,9 +39,9 @@ a:hover {
 
 a:active {
   color: white;
-}
+}*/
 
-input {
+.input {
   box-shadow: none;
 }
 
