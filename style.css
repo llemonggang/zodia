@@ -24,25 +24,24 @@ body {
 
 a:hover {
   color: #AFFFC7;
-  box-shadow: none;
 }
 a:link {
   color: #AFFFC7;
-  box-shadow: none;
 }
 
 a:visited {
   color: white;
-  box-shadow: none;
 }
 
 a:hover {
   color: #AFFFC7;
-  box-shadow: none;
 }
 
 a:active {
   color: white;
+}
+
+input {
   box-shadow: none;
 }
 
