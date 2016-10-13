@@ -109,13 +109,10 @@ function horoscope() {
       $('.daily-blurb').html('<p>' + cancer.Daily_Horoscope + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
-      $('.love-icon').show()
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
-      $('.sun-sign').show()
       $('.daily-blurb').show()
-      $('.back').show()
     })
 
     $('.leo').click(function(e) {
@@ -130,7 +127,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.virgo').click(function(e) {
@@ -145,7 +141,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.libra').click(function(e) {
@@ -160,7 +155,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.scorpio').click(function(e) {
@@ -175,7 +169,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.sagittarius').click(function(e) {
@@ -190,7 +183,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.capricorn').click(function(e) {
@@ -205,7 +197,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.aquarius').click(function(e) {
@@ -220,7 +211,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.pisces').click(function(e) {
@@ -235,7 +225,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.aries').click(function(e) {
@@ -250,7 +239,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.taurus').click(function(e) {
@@ -265,7 +253,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.gemini').click(function(e) {
@@ -280,7 +267,6 @@ function horoscope() {
       $('.navbar').show()
       $('.sun-sign').show()
       $('.daily-blurb').show();
-      $('.back').show()
     })
 
     $('.love-icon').click(function(e) {
