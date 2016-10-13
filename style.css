@@ -25,23 +25,8 @@ body {
 a:hover {
   color: #AFFFC7;
 }
-/*a:link {
-  color: #AFFFC7;
-}
 
-a:visited {
-  color: white;
-}
-
-a:hover {
-  color: #AFFFC7;
-}
-
-a:active {
-  color: white;
-}*/
-
-.input {
+.symbol {
   box-shadow: none;
 }
 
