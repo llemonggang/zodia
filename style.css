@@ -26,9 +26,8 @@ a:hover {
   color: #AFFFC7;
 }
 
-.symbol {
-  border: none;
-  outline: none;
+input:focus {
+    outline:none;
 }
 
 ul {
