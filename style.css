@@ -139,4 +139,19 @@ div.appear {
 div.hover:hover div.appear {
     display: inline;
     margin-left: -80px;
+    margin-top: -20px;
+}
+
+div.appearTwo {
+  font-size: 12px;
+  width: 100px;
+  position: absolute;
+  display:none;
+  text-transform: lowercase;
+}
+
+div.hover:hover div.appearTwo {
+    display: inline;
+    margin-top: -90px;
+    margin-left: -10px;
 }
