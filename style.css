@@ -67,11 +67,6 @@ input, input:focus{
         -webkit-box-shadow: none;
 }
 
-/*input[type=image]:focus {
-    width: 130px;
-    height: auto;
-}*/
-
 ul {
   margin-top: -1.5%;
 }

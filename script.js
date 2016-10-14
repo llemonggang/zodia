@@ -8,7 +8,6 @@ $( document ).ready(function() {
     $('.love-icon').hide()
     $('.career-blurb').hide()
     $('.wellness-blurb').hide()
-    // apodImage()
     phaseMoon()
     horoscope()
     infoBox( )
