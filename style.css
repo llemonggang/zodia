@@ -128,3 +128,15 @@ li {
 .deg270 { transform: rotate(270deg) translate(24em) rotate(-270deg); }
 .deg300 { transform: rotate(300deg) translate(24em) rotate(-300deg); }
 .deg330 { transform: rotate(330deg) translate(24em) rotate(-330deg); }
+
+div.appear {
+  font-size: 12px;
+  width: 100px;
+  position: absolute;
+  display:none;
+}
+
+div.hover:hover div.appear {
+    display: inline;
+    margin-left: -80px;
+}
