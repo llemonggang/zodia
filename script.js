@@ -101,6 +101,7 @@ function horoscope() {
     var capricorn = data[9];
     var aquarius = data[10];
     var pisces = data[11];
+    var aries = data[0];
     var taurus = data[1];
     var gemini = data[2];
 
@@ -122,7 +123,6 @@ function horoscope() {
     })
 
     $('.leo').click(function(e) {
-      $('.daily-blurb').
       $('.wellness-blurb').html('<p>' + leo.Wellness + '</p>')
       $('.career-blurb').html('<p>' + leo.Career + '</p>')
       $('.love-blurb').html('<p>' + leo.Love + '</p>')
@@ -258,7 +258,6 @@ function horoscope() {
       $('.sun-sign').html('<p class="current">' + aries.Sign + '<p/>')
       $('.circle-container').hide();
       $('.site-name').hide()
-      $('.love-icon').show()
       $('.love-blurb').hide()
       $('.navbar').show()
       $('.sun-sign').show()
