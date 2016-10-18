@@ -129,6 +129,8 @@ div.hover:hover div.appearTwo {
         margin-left: 3%;
         font-family: 'Zeyada', cursive;
         font-size: 80px;
+        color: tomato;
+
       }
 
       .ring input {
@@ -203,8 +205,6 @@ div.hover:hover div.appearTwo {
         margin-left: 3%;
         font-family: 'Zeyada', cursive;
         font-size: 80px;
-        color: tomato;
-
       }
 
       .ring input {
