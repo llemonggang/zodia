@@ -134,14 +134,14 @@ div.hover:hover div.appearTwo {
       .ring input {
           display: block;
           position: absolute;
-          width: .5em; height: .5em;
+          width: 1.5em; height: 1.5em;
       }
 
       .ring {
         display: block;
         position: absolute;
         left: 47%;
-        top: 45%;
+        top: 25%;
       }
 
       .deg0 { transform: translate(3.5em); }
