@@ -15,6 +15,7 @@ body {
 .moon-icon {
   width: 35px;
   height: auto;
+  margin-left: -6%;
 }
 
 .sun-icon {
@@ -99,30 +100,30 @@ li {
   font-size: 80px;
 }
 
-.circle-container input {
+.ring input {
     display: block;
     position: absolute;
-    width: 6em; height: 6em;
+    width: 1.5em; height: 1.5em;
 }
 
-.circle-container {
+.ring {
   position: absolute;
   left: 47%;
   top: 45%;
 }
 
-.deg0 { transform: translate(24em); }
-.deg30 { transform: rotate(30deg) translate(24em) rotate(-30deg); }
-.deg60 { transform: rotate(60deg) translate(24em) rotate(-60deg); }
-.deg90 { transform: rotate(90deg) translate(24em) rotate(-90deg); }
-.deg120 { transform: rotate(120deg) translate(24em) rotate(-120deg); }
-.deg150 { transform: rotate(150deg) translate(24em) rotate(-150deg); }
-.deg180 { transform: translate(-24em); }
-.deg210 { transform: rotate(210deg) translate(24em) rotate(-210deg); }
-.deg240 { transform: rotate(240deg) translate(24em) rotate(-240deg); }
-.deg270 { transform: rotate(270deg) translate(24em) rotate(-270deg); }
-.deg300 { transform: rotate(300deg) translate(24em) rotate(-300deg); }
-.deg330 { transform: rotate(330deg) translate(24em) rotate(-330deg); }
+.deg0 { transform: translate(6.5em); }
+.deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
+.deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
+.deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
+.deg180 { transform: translate(-6.5em); }
+.deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
 
 div.appear {
   font-size: 12px;
@@ -149,4 +150,37 @@ div.hover:hover div.appearTwo {
     display: inline;
     margin-top: -90px;
     margin-left: -10px;
+}
+
+@media (max-width: 599px) {
+  .site-name {
+    margin-top: -11%;
+    margin-left: 3%;
+    font-family: 'Zeyada', cursive;
+    font-size: 1em;
+  }
+  .ring input {
+      display: block;
+      position: absolute;
+      width: .5em; height: .5em;
+  }
+
+  .ring {
+    position: absolute;
+    left: 47%;
+    top: 27%;
+  }
+
+  .deg0 { transform: translate(2.5em); }
+  .deg30 { transform: rotate(30deg) translate(2.5em) rotate(-30deg); }
+  .deg60 { transform: rotate(60deg) translate(2.5em) rotate(-60deg); }
+  .deg90 { transform: rotate(90deg) translate(2.5em) rotate(-90deg); }
+  .deg120 { transform: rotate(120deg) translate(2.5em) rotate(-120deg); }
+  .deg150 { transform: rotate(150deg) translate(2.5em) rotate(-150deg); }
+  .deg180 { transform: translate(-2.5em); }
+  .deg210 { transform: rotate(210deg) translate(2.5em) rotate(-210deg); }
+  .deg240 { transform: rotate(240deg) translate(2.5em) rotate(-240deg); }
+  .deg270 { transform: rotate(270deg) translate(2.5em) rotate(-270deg); }
+  .deg300 { transform: rotate(300deg) translate(2.5em) rotate(-300deg); }
+  .deg330 { transform: rotate(330deg) translate(2.5em) rotate(-330deg); }
 }
