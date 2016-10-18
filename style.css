@@ -123,7 +123,7 @@ div.hover:hover div.appearTwo {
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation : portrait) {
         body {
         font-family: 'Cormorant Garamond', serif;
         font-size: 40px;
@@ -189,7 +189,7 @@ div.hover:hover div.appearTwo {
 
     }
 
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+    @media screen and (min-aspect-ratio: 4/3) and (orientation : landscape) {
       body {
         font-family: 'Cormorant Garamond', serif;
         font-size: 40px;
