@@ -156,6 +156,7 @@ div.hover:hover div.appearTwo {
           margin-left: -25px;
       }
       .site-name {
+        position: relative;
         margin-top: 18%;
         margin-left: 7%;
         font-family: 'Zeyada', cursive;
