@@ -178,7 +178,7 @@ div.hover:hover div.appearTwo {
         display: block;
         position: absolute;
         left: 47%;
-        top: 25%;
+        top: -25%;
       }
 
       .deg0 { transform: translate(6.5em); }
