@@ -123,8 +123,8 @@ div.hover:hover div.appearTwo {
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */
-    @media only screen and (min-width : 320px) and (orientation : portrait) {
-      body {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+        body {
         font-family: 'Cormorant Garamond', serif;
         font-size: 40px;
         color: white;
@@ -189,7 +189,7 @@ div.hover:hover div.appearTwo {
 
     }
 
-    @media only screen and (min-width : 320px) and (orientation : landscape) {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
       body {
         font-family: 'Cormorant Garamond', serif;
         font-size: 40px;
@@ -227,7 +227,6 @@ div.hover:hover div.appearTwo {
         margin-left: 5%;
         font-family: 'Zeyada', cursive;
         font-size: 50px;
-        color: tomato;
       }
       .ring input {
           display: block;
