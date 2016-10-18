@@ -130,7 +130,7 @@ div.hover:hover div.appearTwo {
         color: white;
         background-image: url('./images/side-apod.jpg');
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
       }
       div.appear {
         font-size: 12px;
@@ -157,7 +157,7 @@ div.hover:hover div.appearTwo {
       }
       .site-name {
         position: relative;
-        margin-top: 18%;
+        margin-top: 22%;
         margin-left: 7%;
         font-family: 'Zeyada', cursive;
         font-size: 50px;
@@ -170,8 +170,8 @@ div.hover:hover div.appearTwo {
       .ring {
         display: block;
         position: absolute;
-        left: 47%;
-        top: 45%;
+        left: 45%;
+        top: 40%;
       }
 
       .deg0 { transform: translate(3em); }
