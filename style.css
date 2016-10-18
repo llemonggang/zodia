@@ -173,16 +173,16 @@ div.hover:hover div.appearTwo {
     top: 27%;
   }
 
-  .deg0 { transform: translate(.5em); }
-  .deg30 { transform: rotate(30deg) translate(.5em) rotate(-30deg); }
-  .deg60 { transform: rotate(60deg) translate(.5em) rotate(-60deg); }
-  .deg90 { transform: rotate(90deg) translate(.5em) rotate(-90deg); }
-  .deg120 { transform: rotate(120deg) translate(.5em) rotate(-120deg); }
-  .deg150 { transform: rotate(150deg) translate(.5em) rotate(-150deg); }
-  .deg180 { transform: translate(-.5em); }
-  .deg210 { transform: rotate(210deg) translate(.5em) rotate(-210deg); }
-  .deg240 { transform: rotate(240deg) translate(.5em) rotate(-240deg); }
-  .deg270 { transform: rotate(270deg) translate(.5em) rotate(-270deg); }
-  .deg300 { transform: rotate(300deg) translate(.5em) rotate(-300deg); }
-  .deg330 { transform: rotate(330deg) translate(.5em) rotate(-330deg); }
+  .deg0 { transform: translate(2.5em); }
+  .deg30 { transform: rotate(30deg) translate(2.5em) rotate(-30deg); }
+  .deg60 { transform: rotate(60deg) translate(2.5em) rotate(-60deg); }
+  .deg90 { transform: rotate(90deg) translate(2.5em) rotate(-90deg); }
+  .deg120 { transform: rotate(120deg) translate(2.5em) rotate(-120deg); }
+  .deg150 { transform: rotate(150deg) translate(2.5em) rotate(-150deg); }
+  .deg180 { transform: translate(-2.5em); }
+  .deg210 { transform: rotate(210deg) translate(2.5em) rotate(-210deg); }
+  .deg240 { transform: rotate(240deg) translate(2.5em) rotate(-240deg); }
+  .deg270 { transform: rotate(270deg) translate(2.5em) rotate(-270deg); }
+  .deg300 { transform: rotate(300deg) translate(2.5em) rotate(-300deg); }
+  .deg330 { transform: rotate(330deg) translate(2.5em) rotate(-330deg); }
 }
