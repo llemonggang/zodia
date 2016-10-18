@@ -153,7 +153,7 @@ div.hover:hover div.appearTwo {
     margin-left: -10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .site-name {
     margin-top: -11%;
     margin-left: 3%;
