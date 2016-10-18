@@ -227,6 +227,7 @@ div.hover:hover div.appearTwo {
         margin-left: 5%;
         font-family: 'Zeyada', cursive;
         font-size: 50px;
+        color: tomato;
       }
       .ring input {
           display: block;
