@@ -189,7 +189,7 @@ div.hover:hover div.appearTwo {
 
     }
 
-@media only screen and (min-width : 321px) {
+@media only screen and (max-width : 321px) {
       body {
         font-family: 'Cormorant Garamond', serif;
         font-size: 40px;
@@ -228,7 +228,7 @@ div.hover:hover div.appearTwo {
         font-family: 'Zeyada', cursive;
         font-size: 50px;
       }
-      
+
       .ring input {
           display: block;
           position: absolute;
