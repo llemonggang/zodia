@@ -130,7 +130,7 @@ div.hover:hover div.appearTwo {
         color: white;
         background-image: url('./images/side-apod.jpg');
         background-size: cover;
-        background-repeat: repeat;
+        background-repeat: repeat-y;
       }
       div.appear {
         font-size: 12px;
