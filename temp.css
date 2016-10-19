@@ -1,0 +1,305 @@
+/*
+/*==========  Mobile First Method  ==========*/
+
+  /* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px) {
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      color: white;
+      background-image: url('./images/side-apod.jpg');
+      background-size: cover;
+      background-repeat: repeat-y;
+    }
+
+    .container {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .moon-icon {
+      width: 15px;
+      height: auto;
+      margin-left: -10%;
+    }
+
+    .sun-icon {
+      width: 20px;
+      height: auto;
+    }
+
+    .love-icon {
+      width: 20px;
+      height: auto;
+      margin-left: -8px;
+    }
+
+    .daily-icon {
+      width: 20px;
+      height: auto;
+    }
+
+    .wellness-icon {
+      width: 30px;
+      height: auto;
+    }
+
+    .career-icon {
+      width: 30px;
+      height: auto;
+      margin-left: -10px;
+    }
+
+    .circle-icon {
+      width: 20px;
+      height: auto;
+      margin-left: -10px;
+    }
+
+    .moonphase {
+      margin-top: 2.2%;
+    }
+
+    a:hover {
+      color: #AFFFC7;
+    }
+
+    input, input:focus{
+            border-width: 0px;
+            outline: none;
+            -webkit-appearance:none;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+    }
+
+    ul {
+      margin-top: -1.5%;
+    }
+
+    li {
+      list-style: none;
+      float: left;
+      padding: 5px;
+      font-size: 20px;
+      line-height: 3px;
+    }
+
+    .back {
+      text-decoration: none;
+      color: white;
+      margin-left: 80%;
+      margin-top: -4%;
+    }
+
+    .sun-sign {
+      margin-top: -10%;
+      margin-left: -60%;
+      font-family: 'Zeyada', cursive;
+    }
+
+    div.appear {
+      font-size: 12px;
+      width: 100px;
+      position: absolute;
+      display:none;
+    }
+    div.hover:hover div.appear {
+        display: inline;
+        margin-left: -80px;
+        margin-top: -20px;
+    }
+    div.appearTwo {
+      font-size: 12px;
+      width: 100px;
+      position: absolute;
+      display:none;
+      text-transform: lowercase;
+    }
+    div.hover:hover div.appearTwo {
+        display: inline;
+        margin-top: -50px;
+        margin-left: -25px;
+    }
+    .site-name {
+      position: relative;
+      margin-top: 22%;
+      margin-left: 5%;
+      font-family: 'Zeyada', cursive;
+      font-size: 50px;
+    }
+    .ring input {
+        display: block;
+        position: absolute;
+        width: 1em; height: 1em;
+        font-size: 40px;
+    }
+    .ring {
+      display: block;
+      position: absolute;
+      left: 45%;
+      top: 40%;
+    }
+
+    .deg0 { transform: translate(3em); }
+    .deg30 { transform: rotate(30deg) translate(3em) rotate(-30deg); }
+    .deg60 { transform: rotate(60deg) translate(3em) rotate(-60deg); }
+    .deg90 { transform: rotate(90deg) translate(3em) rotate(-90deg); }
+    .deg120 { transform: rotate(120deg) translate(3em) rotate(-120deg); }
+    .deg150 { transform: rotate(150deg) translate(3em) rotate(-150deg); }
+    .deg180 { transform: translate(-3em); }
+    .deg210 { transform: rotate(210deg) translate(3em) rotate(-210deg); }
+    .deg240 { transform: rotate(240deg) translate(3em) rotate(-240deg); }
+    .deg270 { transform: rotate(270deg) translate(3em) rotate(-270deg); }
+    .deg300 { transform: rotate(300deg) translate(3em) rotate(-300deg); }
+    .deg330 { transform: rotate(330deg) translate(3em) rotate(-330deg); }
+
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 480px) {
+    .site-name {
+      margin-top: 12%;
+      margin-left: 3%;
+      font-family: 'Zeyada', cursive;
+      font-size: 80px;
+    }
+
+    .ring input {
+        display: block;
+        position: absolute;
+        width: 1.5em; height: 1.5em;
+    }
+
+    .ring {
+      display: block;
+      position: absolute;
+      left: 47%;
+      top: 45%;
+    }
+
+    .deg0 { transform: translate(6.5em); }
+    .deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
+    .deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
+    .deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
+    .deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
+    .deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
+    .deg180 { transform: translate(-6.5em); }
+    .deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
+    .deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
+    .deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
+    .deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
+    .deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    .site-name {
+      margin-top: 12%;
+      margin-left: 3%;
+      font-family: 'Zeyada', cursive;
+      font-size: 80px;
+    }
+
+    .ring input {
+        display: block;
+        position: absolute;
+        width: 1.5em; height: 1.5em;
+    }
+
+    .ring {
+      display: block;
+      position: absolute;
+      left: 47%;
+      top: 45%;
+    }
+
+    .deg0 { transform: translate(6.5em); }
+    .deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
+    .deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
+    .deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
+    .deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
+    .deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
+    .deg180 { transform: translate(-6.5em); }
+    .deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
+    .deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
+    .deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
+    .deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
+    .deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
+
+  }
+
+   /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px) {
+     .site-name {
+       margin-top: 12%;
+       margin-left: 3%;
+       font-family: 'Zeyada', cursive;
+       font-size: 80px;
+     }
+
+     .ring input {
+         display: block;
+         position: absolute;
+         width: 1.5em; height: 1.5em;
+     }
+
+     .ring {
+       display: block;
+       position: absolute;
+       left: 47%;
+       top: 45%;
+     }
+
+     .deg0 { transform: translate(6.5em); }
+     .deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
+     .deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
+     .deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
+     .deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
+     .deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
+     .deg180 { transform: translate(-6.5em); }
+     .deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
+     .deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
+     .deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
+     .deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
+     .deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
+
+   }
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (min-width : 1200px) {
+     .site-name {
+       margin-top: 12%;
+       margin-left: 3%;
+       font-family: 'Zeyada', cursive;
+       font-size: 80px;
+     }
+
+     .ring input {
+         display: block;
+         position: absolute;
+         width: 1.5em; height: 1.5em;
+     }
+
+     .ring {
+       display: block;
+       position: absolute;
+       left: 47%;
+       top: 45%;
+     }
+
+     .deg0 { transform: translate(6.5em); }
+     .deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
+     .deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
+     .deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
+     .deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
+     .deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
+     .deg180 { transform: translate(-6.5em); }
+     .deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
+     .deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
+     .deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
+     .deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
+     .deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
+
+   }*/
