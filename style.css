@@ -119,7 +119,7 @@ div.hover:hover div.appearTwo {
     margin-top: -90px;
     margin-left: -10px;
 }
-
+/*
 /*==========  Mobile First Method  ==========*/
 
   /* Custom, iPhone Retina */
@@ -423,4 +423,4 @@ div.hover:hover div.appearTwo {
      .deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
      .deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
 
-   }
+   }*/
