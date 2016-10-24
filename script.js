@@ -13,13 +13,13 @@ $( document ).ready(function() {
     infoBox( )
 });
 
-function apodImage() {
-    $.ajax({
-    url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
-    }).done(function(data) {
-    $('#image').html('<img src="' + data.url + '" id="image" />');
-    });
-}
+// function apodImage() {
+//     $.ajax({
+//     url:'https://api.nasa.gov/planetary/apod?api_key=xuyKIKtLax8H6CW7EP8vIJeDEZbLqga6rLLBOVD2',
+//     }).done(function(data) {
+//     $('#image').html('<img src="' + data.url + '" id="image" />');
+//     });
+// }
 
 function phaseMoon() {
 
@@ -33,14 +33,14 @@ function phaseMoon() {
     var dd = today.getDate();
     var mm = today.getMonth()+1;
 
-    var yyyy = today.getFullYear();
+    var yy = today.getFullYear();
       if(dd<10){
           dd='0'+dd
       }
       if(mm<10){
           mm='0'+mm
       }
-    var today = dd+'/'+mm+'/'+yyyy;
+    var today = dd+'/'+mm+'/'+yy;
     var date = $('#date').html(today);
 
     $.ajax({
