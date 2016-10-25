@@ -10,7 +10,7 @@ $( document ).ready(function() {
     $('.wellness-blurb').hide()
     phaseMoon()
     horoscope()
-    infoBox( )
+    infoBox()
 });
 
 // function apodImage() {
