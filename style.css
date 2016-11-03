@@ -6,8 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.container {
+#container {
   padding: 40px;
 }
 
@@ -99,20 +98,20 @@ div.hover:hover div.appearTwo {
     text-align: center;
 }
 
-.site-name {
+#site-name {
   margin-top: 12%;
   margin-left: 43%;
   font-family: 'Zeyada', cursive;
   font-size: 80px;
 }
 
-.ring input {
+#ring input {
     display: block;
     position: absolute;
     width: 1.5em; height: 1.5em;
 }
 
-.ring {
+#ring {
   display: block;
   position: absolute;
   left: 47%;

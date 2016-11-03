@@ -1,6 +1,7 @@
+// This is doing exactly what it should.... why isn't that what we expect?
 $( document ).ready(function() {
-  $('.daily-blurb').hide()
-  $('.navbar').hide()
+  $('#daily-blurb').hide()
+  $('#navbar').hide()
   // phaseMoon()
   // infoBox()
 
@@ -8,36 +9,48 @@ $( document ).ready(function() {
   url:'https://zodia.herokuapp.com/zodiac',
   }).done(function(data) {
 
-    var cancer = data[3];
-    var leo = data[4];
-    var virgo = data[5];
-    var libra = data[6];
-    var scorpio = data[7];
-    var sagittarius = data[8];
-    var capricorn = data[9];
-    var aquarius = data[10];
-    var pisces = data[11];
-    var aries = data[0];
-    var taurus = data[1];
-    var gemini = data[2];
-
+    // console.log(data);
+    key = {
+      'aries': 0,
+      'taurus': 1,
+      'gemini': 2,
+      'cancer': 3,
+      'leo': 4,
+      'virgo': 5,
+      'libra': 6,
+      'scorpio': 7,
+      'sagittarius': 8,
+      'capricorn': 9,
+      'aquarius': 10,
+      'pisces': 11
+    }
 
   //making icon "current" on click
     $('.sign').click(function() {
-      $(this).addClass( "current" );
-      $('.ring').hide()
+      var sign = $(this).data('sign');
+      var currentSign = data[key[sign]];
+      $('#ring').hide()
       $('.site-name').hide()
       $('.navbar').show()
-      $('.daily-blurb').show()
+      // $('.daily-blurb').html('<p>' + currentSign.Daily_Horoscope + '</p>')
+      showContent(currentSign)
     });
 
-    console.log($('.current').text());
-
-    // if (($('.current').text()) === ($('.gemini').text())) {
-    //   console.log('working');
-    // }
-
-
+    function showContent(nachos) {
+      $('.wellness-blurb').html('<p>' + nachos.Wellness + '</p>')
+      $('.career-blurb').html('<p>' + nachos.Career + '</p>')
+      $('.love-blurb').html('<p>' + nachos.Love + '</p>')
+      $('.sun-sign').html('<p class="current">' + nachos.Sign + '</p>')
+      $('.daily-blurb').html('<p>' + nachos.Daily_Horoscope + '<p/>')
+      console.log(nachos.Career);
+      $('.ring').hide();
+      $('.site-name').hide()
+      $('.love-icon').show()
+      $('.love-blurb').hide()
+      $('.navbar').show()
+      $('.sun-sign').show()
+      $('.daily-blurb').show();
+    };
 
   //removing "current" class on return to homepage
     $('.circle-icon').click(function() {
@@ -46,7 +59,6 @@ $( document ).ready(function() {
       $('.ring').show()
       $('.site-name').show()
     })
-
   });
 
 });
