@@ -1,4 +1,3 @@
-// This is doing exactly what it should.... why isn't that what we expect?
 $( document ).ready(function() {
   $('#daily-blurb').hide()
   $('#navbar').hide()
@@ -9,7 +8,6 @@ $( document ).ready(function() {
   url:'https://zodia.herokuapp.com/zodiac',
   }).done(function(data) {
 
-    // console.log(data);
     key = {
       'aries': 0,
       'taurus': 1,
@@ -36,13 +34,13 @@ $( document ).ready(function() {
       showContent(currentSign)
     });
 
-    function showContent(nachos) {
-      $('.wellness-blurb').html('<p>' + nachos.Wellness + '</p>')
-      $('.career-blurb').html('<p>' + nachos.Career + '</p>')
-      $('.love-blurb').html('<p>' + nachos.Love + '</p>')
-      $('.sun-sign').html('<p class="current">' + nachos.Sign + '</p>')
-      $('.daily-blurb').html('<p>' + nachos.Daily_Horoscope + '<p/>')
-      console.log(nachos.Career);
+    function showContent(data) {
+      $('.wellness-blurb').html('<p>' + data.Wellness + '</p>')
+      $('.career-blurb').html('<p>' + data.Career + '</p>')
+      $('.love-blurb').html('<p>' + data.Love + '</p>')
+      $('.sun-sign').html('<p class="current">' + data.Sign + '</p>')
+      $('.daily-blurb').html('<p>' + data.Daily_Horoscope + '<p/>')
+      console.log(data.Career);
       $('.ring').hide();
       $('.site-name').hide()
       $('.love-icon').show()
