@@ -94,10 +94,10 @@ function phaseMoon() {
     longitude: longitude
     }).done(function(data) {
     var moon = $('#moonphase').text(data.response['0'].moon.phase.name);
-    var sunrise = ($('.sunrise').text(data.response['0'].sun.riseISO)).text();
-    var sunset = ($('.sunset').text(data.response['0'].sun.setISO)).text();
-    var rise = $('.sunrise').html('<p>rise ' + sunrise.substr(11, 8));
-    var set = $('.sunset').html('<p>set ' + sunset.substr(11, 8));
+    var sunrise = ($('#sunrise').text(data.response['0'].sun.riseISO)).text();
+    var sunset = ($('#sunset').text(data.response['0'].sun.setISO)).text();
+    var rise = $('#sunrise').html('<p>rise ' + sunrise.substr(11, 8));
+    var set = $('#sunset').html('<p>set ' + sunset.substr(11, 8));
 
       switch(moon.html()) {
         case 'waxing gibbous':

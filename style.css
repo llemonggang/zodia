@@ -79,43 +79,6 @@ div.hover:hover div.appear {
     display: block;
 }
 
-/*main page*/
-
-#navbar {
-  display: block;
-}
-#blurb {
-  display: block;
-  margin: 30px;
-}
-
-
-
-#love-icon {
-  width: 50px;
-  height: auto;
-}
-
-#daily-icon {
-  width: 50px;
-  height: auto;
-}
-
-#wellness-icon {
-  width: 60px;
-  height: auto;
-}
-
-#career-icon {
-  width: 60px;
-  height: auto;
-}
-
-#circle-icon {
-  width: 50px;
-  height: auto;
-}
-
 /*removes blue box from border*/
 input, input:focus{
         border-width: 0px;
@@ -126,14 +89,35 @@ input, input:focus{
         -webkit-box-shadow: none;
 }
 
-ul {
+/*main page*/
+
+#navbar {
+  display: block;
+}
+
+#navbar ul {
   margin-top: -1.5%;
 }
 
-li {
+#navbar li {
   display: inline-block;
   list-style: none;
   padding: 10px;
   font-size: 20px;
   line-height: 3px;
+}
+
+.icons {
+  width: 50px;
+  height: auto;
+}
+
+#blurb {
+  display: block;
+  margin: 30px;
+  margin-top: 75px;
+}
+
+#blurb-content {
+  font-weight: 100;
 }
