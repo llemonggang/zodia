@@ -35,19 +35,18 @@ $( document ).ready(function() {
     });
 
     function showContent(data) {
-      $('.wellness-blurb').html('<p>' + data.Wellness + '</p>')
-      $('.career-blurb').html('<p>' + data.Career + '</p>')
-      $('.love-blurb').html('<p>' + data.Love + '</p>')
-      $('.sun-sign').html('<p class="current">' + data.Sign + '</p>')
-      $('.daily-blurb').html('<p>' + data.Daily_Horoscope + '<p/>')
-      console.log(data.Career);
-      $('.ring').hide();
-      $('.site-name').hide()
-      $('.love-icon').show()
-      $('.love-blurb').hide()
-      $('.navbar').show()
-      $('.sun-sign').show()
-      $('.daily-blurb').show();
+      $('#wellness-blurb').html('<p>' + data.Wellness + '</p>')
+      $('#career-blurb').html('<p>' + data.Career + '</p>')
+      $('#love-blurb').html('<p>' + data.Love + '</p>')
+      $('#sun-sign').html('<p class="current">' + data.Sign + '</p>')
+      $('#daily-blurb').html('<p>' + data.Daily_Horoscope + '<p/>')
+      $('#ring').hide();
+      $('#site-name').hide()
+      $('#love-icon').show()
+      $('#love-blurb').hide()
+      $('#navbar').show()
+      $('#sun-sign').show()
+      $('#daily-blurb').show();
     };
 
   //removing "current" class on return to homepage
