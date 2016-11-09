@@ -28,35 +28,38 @@ $( document ).ready(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
       $('#ring').hide()
-      $('.site-name').hide()
-      $('.navbar').show()
-      // $('.daily-blurb').html('<p>' + currentSign.Daily_Horoscope + '</p>')
+      $('#site-name').hide()
+      $('#navbar').show()
+      $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>')
       showContent(currentSign)
+      console.log(currentSign);
     });
 
     function showContent(data) {
-      $('#wellness-blurb').html('<p>' + data.Wellness + '</p>')
-      $('#career-blurb').html('<p>' + data.Career + '</p>')
-      $('#love-blurb').html('<p>' + data.Love + '</p>')
-      $('#sun-sign').html('<p class="current">' + data.Sign + '</p>')
-      $('#daily-blurb').html('<p>' + data.Daily_Horoscope + '<p/>')
-      $('#ring').hide();
-      $('#site-name').hide()
-      $('#love-icon').show()
-      $('#love-blurb').hide()
-      $('#navbar').show()
-      $('#sun-sign').show()
-      $('#daily-blurb').show();
+      $('#daily-icon').click(function() {
+        $('#blurb-content').html('<p>' + data.Daily_Horoscope + '</p>')
+      });
+      $('#love-icon').click(function() {
+        $('#blurb-content').html('<p>' + data.Love + '</p>')
+      });
+      $('#wellness-icon').click(function() {
+        $('#blurb-content').html('<p>' + data.Wellness + '</p>')
+      });
+      $('#career-icon').click(function() {
+        $('#blurb-content').html('<p>' + data.Career + '</p>')
+      });
     };
 
-  //removing "current" class on return to homepage
-    $('.circle-icon').click(function() {
-      $('.current').removeClass( "current" );
-      $('.navbar').hide()
-      $('.ring').show()
-      $('.site-name').show()
-    })
   });
+
+    $('#circle-icon').click(function() {
+      $('.current').removeClass( "current" );
+      $('#navbar').hide();
+      $('#sun-sign').hide();
+      $('#blurb-content').hide();
+      $('#ring').show();
+      $('#site-name').show();
+    });
 
 });
 

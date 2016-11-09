@@ -20,27 +20,27 @@ body {
   height: auto;
 }
 
-.love-icon {
+#love-icon {
   width: 50px;
   height: auto;
 }
 
-.daily-icon {
+#daily-icon {
   width: 50px;
   height: auto;
 }
 
-.wellness-icon {
+#wellness-icon {
   width: 60px;
   height: auto;
 }
 
-.career-icon {
+#career-icon {
   width: 60px;
   height: auto;
 }
 
-.circle-icon {
+#circle-icon {
   width: 50px;
   height: auto;
 }
