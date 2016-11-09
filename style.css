@@ -10,6 +10,31 @@ body {
   padding: 40px;
 }
 
+/*home page*/
+
+#moon-icon {
+  width: 80px;
+  height: auto;
+}
+
+#sun-icon {
+  width: 100px;
+  height: auto;
+}
+
+#moonphase {
+  margin-top: 2.2%;
+}
+
+#sunmoon {
+  margin: 30px;
+}
+
+#sunmoon li {
+  display: inline;
+  padding: 15px;
+}
+
 #site-name {
   margin-left: 5%;
   text-transform: uppercase;
@@ -54,6 +79,8 @@ div.hover:hover div.appear {
     display: block;
 }
 
+/*main page*/
+
 #navbar {
   display: block;
 }
@@ -62,15 +89,7 @@ div.hover:hover div.appear {
   margin: 30px;
 }
 
-#moon-icon {
-  width: 35px;
-  height: auto;
-}
 
-#sun-icon {
-  width: 50px;
-  height: auto;
-}
 
 #love-icon {
   width: 50px;
@@ -95,10 +114,6 @@ div.hover:hover div.appear {
 #circle-icon {
   width: 50px;
   height: auto;
-}
-
-#moonphase {
-  margin-top: 2.2%;
 }
 
 /*removes blue box from border*/
