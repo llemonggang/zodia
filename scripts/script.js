@@ -23,13 +23,13 @@ $( document ).ready(function() {
       'pisces': 11
     }
 
-  //making icon "current" on click
     $('.sign').click(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
       $('#ring').hide()
       $('#site-name').hide()
       $('#navbar').show()
+      $('#sun-sign').html('<p>' + currentSign.Sign + '</p>')
       $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>')
       showContent(currentSign)
       console.log(currentSign);

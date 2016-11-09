@@ -1,5 +1,5 @@
 body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   color: white;
   background-image: url('./images/apod.jpg');
@@ -10,12 +10,64 @@ body {
   padding: 40px;
 }
 
-.moon-icon {
+#site-name {
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+#ring input {
+    display: block;
+    position: absolute;
+    width: 1.5em; height: 1.5em;
+}
+
+#ring {
+  display: block;
+  position: absolute;
+  left: 60%;
+  top: 45%;
+}
+
+.deg0 { transform: translate(8.5em); }
+.deg30 { transform: rotate(30deg) translate(8.5em) rotate(-30deg); }
+.deg60 { transform: rotate(60deg) translate(8.5em) rotate(-60deg); }
+.deg90 { transform: rotate(90deg) translate(8.5em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(8.5em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(8.5em) rotate(-150deg); }
+.deg180 { transform: translate(-8.5em); }
+.deg210 { transform: rotate(210deg) translate(8.5em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(8.5em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(8.5em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
+
+div.appear {
+  font-size: 42px;
+  width: 300px;
+  position: absolute;
+  display: none;
+  text-transform: lowercase;
+}
+
+div.hover:hover div.appear {
+    display: block;
+}
+
+#navbar {
+  display: block;
+}
+#blurb {
+  display: block;
+  margin: 30px;
+}
+
+#moon-icon {
   width: 35px;
   height: auto;
 }
 
-.sun-icon {
+#sun-icon {
   width: 50px;
   height: auto;
 }
@@ -45,10 +97,11 @@ body {
   height: auto;
 }
 
-.moonphase {
+#moonphase {
   margin-top: 2.2%;
 }
 
+/*removes blue box from border*/
 input, input:focus{
         border-width: 0px;
         outline: none;
@@ -63,70 +116,9 @@ ul {
 }
 
 li {
+  display: inline-block;
   list-style: none;
-  float: left;
   padding: 10px;
   font-size: 20px;
   line-height: 3px;
 }
-
-.back {
-  text-decoration: none;
-  color: white;
-  margin-left: 80%;
-  margin-top: -4%;
-}
-
-.sun-sign {
-  margin-top: -10%;
-  margin-left: -60%;
-  font-family: 'Zeyada', cursive;
-}
-
-div.appearTwo {
-  font-size: 12px;
-  width: 100px;
-  position: absolute;
-  display:none;
-  text-transform: lowercase;
-}
-
-div.hover:hover div.appearTwo {
-    display: inline;
-    margin-top: -90px;
-    margin-left: -18px;
-    text-align: center;
-}
-
-#site-name {
-  margin-top: 14%;
-  margin-left: 40%;
-  font-family: 'Zeyada', cursive;
-  font-size: 80px;
-}
-
-#ring input {
-    display: block;
-    position: absolute;
-    width: 1.5em; height: 1.5em;
-}
-
-#ring {
-  display: block;
-  position: absolute;
-  left: 47%;
-  top: 45%;
-}
-
-.deg0 { transform: translate(6.5em); }
-.deg30 { transform: rotate(30deg) translate(6.5em) rotate(-30deg); }
-.deg60 { transform: rotate(60deg) translate(6.5em) rotate(-60deg); }
-.deg90 { transform: rotate(90deg) translate(6.5em) rotate(-90deg); }
-.deg120 { transform: rotate(120deg) translate(6.5em) rotate(-120deg); }
-.deg150 { transform: rotate(150deg) translate(6.5em) rotate(-150deg); }
-.deg180 { transform: translate(-6.5em); }
-.deg210 { transform: rotate(210deg) translate(6.5em) rotate(-210deg); }
-.deg240 { transform: rotate(240deg) translate(6.5em) rotate(-240deg); }
-.deg270 { transform: rotate(270deg) translate(6.5em) rotate(-270deg); }
-.deg300 { transform: rotate(300deg) translate(6.5em) rotate(-300deg); }
-.deg330 { transform: rotate(330deg) translate(6.5em) rotate(-330deg); }
