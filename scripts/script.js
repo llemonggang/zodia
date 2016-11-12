@@ -103,6 +103,7 @@ $( document ).ready(function() {
       $('#sunmoon').hide();
       $('#ring').hide();
       $('#site-name').hide();
+      $('#logo').hide();
       $('#navbar').show();
       $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
       $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
@@ -117,6 +118,7 @@ $( document ).ready(function() {
       $('#ring').show();
       $('#site-name').show();
       $('#sunmoon').show();
+      $('#logo').show();
     });
 
     $('#daily-icon').click(function(currentSign) {
