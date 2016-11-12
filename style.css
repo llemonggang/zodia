@@ -42,16 +42,11 @@ body {
 }
 
 #ring input {
-    display: block;
-    position: absolute;
-    width: 1.5em; height: 1.5em;
-}
-
-#ring {
   display: block;
   position: absolute;
   left: 65%;
   top: 45%;
+  width: 1.5em; height: 1.5em;
 }
 
 .deg0 { transform: translate(8.5em); }
@@ -67,16 +62,13 @@ body {
 .deg300 { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
 .deg330 { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
 
-div.appear {
-  font-size: 42px;
-  width: 300px;
-  position: absolute;
-  display: none;
-  text-transform: lowercase;
+.hover:hover .appear {
+    display: block;
 }
 
-div.hover:hover div.appear {
-    display: block;
+.appear {
+  display: none;
+  margin-left: 5%;
 }
 
 /*removes blue box from border*/
