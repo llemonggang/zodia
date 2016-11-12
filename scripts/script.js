@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-  $('#daily-blurb').hide()
-  $('#navbar').hide()
-  phaseMoon()
-  infoBox()
+  $('#daily-blurb').hide();
+  $('#navbar').hide();
+  phaseMoon();
+  infoBox();
 
   $.ajax({
   url:'https://zodia.herokuapp.com/zodiac',
@@ -23,19 +23,6 @@ $( document ).ready(function() {
       'pisces': 11
     }
 
-    $('.sign').click(function() {
-      var sign = $(this).data('sign');
-      var currentSign = data[key[sign]];
-      $('#sunmoon').hide();
-      $('#ring').hide();
-      $('#site-name').hide();
-      $('#navbar').show();
-      $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
-      $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
-      showContent(currentSign);
-      console.log(currentSign);
-    });
-
     function showContent(data) {
       $('#daily-icon').click(function() {
         $('#blurb-content').html('<p>' + data.Daily_Horoscope + '</p>')
@@ -51,19 +38,33 @@ $( document ).ready(function() {
       });
     };
 
-  });
+      $('.sign').click(function() {
+        var sign = $(this).data('sign');
+        var currentSign = data[key[sign]];
+        $('#sunmoon').hide();
+        $('#ring').hide();
+        $('#site-name').hide();
+        $('#navbar').show();
+        $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
+        $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
+        showContent(currentSign);
+        console.log(currentSign);
+      });
 
-  $('#circle-icon').click(function() {
-    $('.current').removeClass( "current" );
-    $('#navbar').hide();
-    $('#sun-sign').hide();
-    $('#blurb-content').hide();
-    $('#ring').show();
-    $('#site-name').show();
-    $('#sunmoon').show();
+    $('#circle-icon').click(function() {
+      $('.current').removeClass( "current" );
+      $('#navbar').hide();
+      $('#sun-sign').html('<p>' + ' ' + '</p>');
+      $('#blurb-content').html('<p>' + ' ' + '</p>');
+      $('#ring').show();
+      $('#site-name').show();
+      $('#sunmoon').show();
+    });
+
   });
 
 });
+
 
 function phaseMoon() {
 
