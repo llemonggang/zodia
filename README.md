@@ -6,7 +6,7 @@ All icons courtesy of The Noun Project, https://thenounproject.com/
 
 "Moon Phases Collection" by Beatriz Isaura Cantu Brandi
 
-"Sun" by Lucas fhñe
+"Sun" by Tinashe Mugayi
 
 "Light Bulb" by Iris Li
 
