@@ -48,7 +48,6 @@ $( document ).ready(function() {
         $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
         $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
         showContent(currentSign);
-        console.log(currentSign);
       });
 
     $('#circle-icon').click(function() {
@@ -60,6 +59,22 @@ $( document ).ready(function() {
       $('#site-name').show();
       $('#sunmoon').show();
     });
+
+    $('#daily-icon').click(function(currentSign) {
+      $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
+    })
+
+    $('#love-icon').click(function(currentSign) {
+      $('#blurb-content').html('<p>' + currentSign.Love + '</p>');
+    })
+
+    $('#wellness-icon').click(function(currentSign) {
+      $('#blurb-content').html('<p>' + currentSign.Wellness + '</p>');
+    })
+
+    $('#career-icon').click(function(currentSign) {
+      $('#blurb-content').html('<p>' + currentSign.Career + '</p>');
+    })
 
   });
 
