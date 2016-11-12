@@ -12,27 +12,11 @@ body {
 
 /*home page*/
 
-#moon-icon {
-  width: 80px;
-  height: auto;
-}
-
-#sun-icon {
-  width: 100px;
-  height: auto;
-}
-
-#moonphase {
-  margin-top: 2.2%;
-}
-
-#sunmoon {
-  margin: 30px;
-}
-
-#sunmoon li {
-  display: inline;
-  padding: 15px;
+#logo {
+  height: 60px;
+  width: auto;
+  margin-left: 5%;
+  margin-bottom: -10%;
 }
 
 #site-name {
