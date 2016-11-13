@@ -55,7 +55,7 @@ body {
   margin-top: 10%;
 }
 
-#logo {
+.logo {
   height: 60px;
   width: auto;
   margin-left: 27%;
@@ -99,7 +99,7 @@ body {
 .appear {
   display: none;
   margin-left: 3%;
-  margin-top: -5%;
+  margin-top: -13%;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -153,4 +153,36 @@ input, input:focus{
 
 #blurb-content {
   font-weight: 100;
+}
+
+/*halfmoon*/
+
+#halfmoon img {
+  width: 1.5em; height: 1.5em;
+  background-color: #50C5D6;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+#buddha {
+  margin-top: -64%;
+  transform: rotate(5deg) translate(.8em) rotate(-5deg);
+}
+
+#logo {
+  margin-top: -43%;
+  transform: rotate(5deg) translate(-1.2em) rotate(-5deg);
+}
+
+#mudra {
+  margin-top: -23%;
+  transform: rotate(5deg) translate(.8em) rotate(-5deg);
+}
+
+#halfmoon-two img {
+  width: 1.5em; height: 1.5em;
+  background-color: #50C5D6;
+  border-radius: 50px;
+  padding: 10px;
+  float: right;
 }

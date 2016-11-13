@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   $('#daily-blurb').hide();
   $('#navbar').hide();
+  $('#halfmoon-two').hide();
   navigator.geolocation.getCurrentPosition(success);
 
   function success(position) {
@@ -100,10 +101,12 @@ $( document ).ready(function() {
     $('.sign').click(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
+      $('#halfmoon').hide();
       $('.border').hide();
       $('#ring').hide();
       $('#site-name').hide();
-      $('#logo').hide();
+      $('.logo').hide();
+      $('#halfmoon-two').show();
       $('#navbar').show();
       $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
       $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
@@ -113,12 +116,14 @@ $( document ).ready(function() {
     $('#circle-icon').click(function() {
       $('.current').removeClass( "current" );
       $('#navbar').hide();
+      $('#halfmoon-two').hide();
       $('#sun-sign').html('<p>' + ' ' + '</p>');
       $('#blurb-content').html('<p>' + ' ' + '</p>');
+      $('#halfmoon').show();
       $('.border').show();
       $('#ring').show();
       $('#site-name').show();
-      $('#logo').show();
+      $('.logo').show();
     });
 
     $('#daily-icon').click(function(currentSign) {
