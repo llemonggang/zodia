@@ -31,9 +31,8 @@ $( document ).ready(function() {
     var moon = $('#moonphase').text(data.response['0'].moon.phase.name);
     var sunrise = ($('#sunrise').text(data.response['0'].sun.riseISO)).text();
     var sunset = ($('#sunset').text(data.response['0'].sun.setISO)).text();
-    var rise = $('#sunrise').html('<p>rise ' + sunrise.substr(11, 5));
-    var set = $('#sunset').html('<p>set ' + sunset.substr(11, 5));
-    console.log(moonphase);
+    var rise = $('#sunrise').html('<p>rise ' + sunrise.substr(11, 5)  + '</p>');
+    var set = $('#sunset').html('<p>set ' + sunset.substr(11, 5) + '</p>');
 
       switch(moon.html()) {
         case 'waxing gibbous':
@@ -101,7 +100,7 @@ $( document ).ready(function() {
     $('.sign').click(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
-      $('#sunmoon').hide();
+      $('#sunmoon-panel').hide();
       $('#ring').hide();
       $('#site-name').hide();
       $('#logo').hide();
@@ -116,9 +115,9 @@ $( document ).ready(function() {
       $('#navbar').hide();
       $('#sun-sign').html('<p>' + ' ' + '</p>');
       $('#blurb-content').html('<p>' + ' ' + '</p>');
+      $('#sunmoon-panel').show();
       $('#ring').show();
       $('#site-name').show();
-      $('#sunmoon').show();
       $('#logo').show();
     });
 
@@ -139,9 +138,9 @@ $( document ).ready(function() {
     })
 
   });
-
-  $('.hover').hover(function(){
-    
-  })
+  //
+  // $('.hover').hover(function(){
+  //
+  // })
 
 });
