@@ -100,7 +100,7 @@ $( document ).ready(function() {
     $('.sign').click(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
-      $('#sunmoon-panel').hide();
+      $('.border').hide();
       $('#ring').hide();
       $('#site-name').hide();
       $('#logo').hide();
@@ -115,7 +115,7 @@ $( document ).ready(function() {
       $('#navbar').hide();
       $('#sun-sign').html('<p>' + ' ' + '</p>');
       $('#blurb-content').html('<p>' + ' ' + '</p>');
-      $('#sunmoon-panel').show();
+      $('.border').show();
       $('#ring').show();
       $('#site-name').show();
       $('#logo').show();

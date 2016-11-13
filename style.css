@@ -58,9 +58,10 @@ body {
 #logo {
   height: 60px;
   width: auto;
-  margin-top: -5%;
   margin-left: 27%;
-  margin-bottom: -15%;
+                          /*the same thing!*/
+  /*margin-bottom: 10%;*/
+  margin top: 90%;
 }
 
 #site-name {
@@ -98,6 +99,7 @@ body {
 .appear {
   display: none;
   margin-left: 3%;
+  margin-top: 1%;
   font-size: 30px;
   text-transform: uppercase;
 }
