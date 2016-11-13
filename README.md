@@ -8,14 +8,16 @@ All icons courtesy of The Noun Project, https://thenounproject.com/
 
 "Sun" by Tinashe Mugayi
 
-"Light Bulb" by Iris Li
+"Light Bulb" by Icon Island
 
-"Lotus" by Image Folio
+"Lotus" by Mikicon
 
-"Calendar" by Tracy Tam
+"Calendar" by Iconsphere
 
 "Loading" by Nurutdinov Timur
 
-"Heart" by Futishia
+"Love" by Gregor Cresnar
 
 "Zodiac - Line Icon Collection" by Icon 54
+
+"Zen" - by Stephanie Wauters
