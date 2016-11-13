@@ -12,10 +12,38 @@ body {
 
 /*home page*/
 
+#sunmoon-panel {
+  margin-left: 45px;
+  margin-top: 15px;
+  /*background-color: rgba(136, 255, 202, 0.4);*/
+  background-color: rgba(255, 99, 71, .9);
+  height: 375px;
+  width: 375px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+#sun-icon {
+  height: 50px;
+  width: auto;
+}
+
+#moon-icon {
+  height: 50px;
+  width: auto;
+}
+
+#moonphase {
+  font-size: 20px;
+}
+
 #logo {
   height: 60px;
   width: auto;
-  margin-left: 5%;
+  margin-top: -5%;
+  margin-left: 3%;
   margin-bottom: -10%;
 }
 
@@ -46,13 +74,17 @@ body {
 .deg300 { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
 .deg330 { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
 
+/*#appear {
+  margin-left: 3%;
+}
+
 .hover:hover .appear {
     display: block;
-}
+}*/
 
 .appear {
   display: none;
-  margin-left: 5%;
+  margin-left: 3%;
   font-size: 30px;
   text-transform: uppercase;
 }

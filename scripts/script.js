@@ -33,6 +33,7 @@ $( document ).ready(function() {
     var sunset = ($('#sunset').text(data.response['0'].sun.setISO)).text();
     var rise = $('#sunrise').html('<p>rise ' + sunrise.substr(11, 5));
     var set = $('#sunset').html('<p>set ' + sunset.substr(11, 5));
+    console.log(moonphase);
 
       switch(moon.html()) {
         case 'waxing gibbous':
@@ -138,5 +139,9 @@ $( document ).ready(function() {
     })
 
   });
+
+  $('.hover').hover(function(){
+    
+  })
 
 });
