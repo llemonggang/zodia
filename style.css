@@ -12,7 +12,7 @@ body {
 
 /*home page*/
 
-#border {
+.border {
   border-radius: 50px;
   border-color: white;
   border-width: 5px;
@@ -99,7 +99,7 @@ body {
 .appear {
   display: none;
   margin-left: 3%;
-  margin-top: 1%;
+  margin-top: -8%;
   font-size: 30px;
   text-transform: uppercase;
 }
