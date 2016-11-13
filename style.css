@@ -61,7 +61,7 @@ body {
   margin-left: 27%;
                           /*the same thing!*/
   /*margin-bottom: 10%;*/
-  margin top: 90%;
+  margin top: 93%;
 }
 
 #site-name {
@@ -99,7 +99,7 @@ body {
 .appear {
   display: none;
   margin-left: 3%;
-  margin-top: -8%;
+  margin-top: -5%;
   font-size: 30px;
   text-transform: uppercase;
 }
