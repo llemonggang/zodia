@@ -7,18 +7,18 @@ body {
   background-repeat: no-repeat;
 }
 #container {
-  padding: 40px;
+  padding: 1em;
 }
 
 /*home page*/
 
 .sunmoon-panel {
-  margin-left: 45px;
-  margin-top: 15px;
+  margin-left: 1em;
+  margin-top: 1em;
   background-color: rgba(246, 211, 19, 0.7);
-  height: 170px;
-  width: 170px;
-  padding: 5px;
+  height: 4.5em;
+  width: 4.5em;
+  padding: .2em;
   border-radius: 50px;
   border-color: white;
   border-width: 5px;
