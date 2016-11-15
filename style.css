@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 400%;
   color: white;
   background-image: url('./images/apod.jpg');
   background-size: cover;
@@ -12,15 +12,7 @@ body {
 
 /*home page*/
 
-.border {
-  border-radius: 50px;
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
-  width: 170px;
-}
-
-#sunmoon-panel {
+.sunmoon-panel {
   margin-left: 45px;
   margin-top: 15px;
   background-color: rgba(246, 211, 19, 0.7);
@@ -28,6 +20,9 @@ body {
   width: 170px;
   padding: 5px;
   border-radius: 50px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
 }
 
 #sun-icon {
