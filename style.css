@@ -276,7 +276,7 @@ input, input:focus{
 @media screen and (min-width: 901px) and (max-width: 1199px) {
 
   #ring input {
-    position: fixed;
+    position: absulute;
     left: 65%;
     top: 45%;
     width: 1.5em; height: 1.5em;
