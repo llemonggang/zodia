@@ -179,13 +179,109 @@ input, input:focus{
 
 /*RESPONSIVE DESIGNS*/
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  #ring {
+    margin-top: 250%;
+  }
+
+  #site-name {
+    margin: 0 auto;
+    font-size: .75em;
+  }
+
+  #ring input {
+    position: absolute;
+    width: 1em; height: 1em;
+  }
+
+  #cancer { transform: translate(2.5em); }
+  #leo { transform: rotate(30deg) translate(2.5em) rotate(-30deg); }
+  #virgo { transform: rotate(60deg) translate(2.5em) rotate(-60deg); }
+  #libra { transform: rotate(90deg) translate(2.5em) rotate(-90deg); }
+  #scorpio { transform: rotate(120deg) translate(2.5em) rotate(-120deg); }
+  #sagittarius { transform: rotate(150deg) translate(2.5em) rotate(-150deg); }
+  #capricorn { transform: translate(-2.5em); }
+  #aquarius { transform: rotate(210deg) translate(2.5em) rotate(-210deg); }
+  #pisces { transform: rotate(240deg) translate(2.5em) rotate(-240deg); }
+  #aries { transform: rotate(270deg) translate(2.5em) rotate(-270deg); }
+  #taurus { transform: rotate(300deg) translate(2.5em) rotate(-300deg); }
+  #gemini { transform: rotate(330deg) translate(2.5em) rotate(-330deg); }
+
+  #halfmoon img {
+    /*margin-left: 50%;
+    margin-top: 75%;
+    width: 1em; height: 1em;
+    background-color: #50C5D6;
+    border-radius: 1em;
+    padding: .1em;*/
+    display: none;
+  }
+
+  #buddha {
+    transform: translate(1.5em);
+  }
+
+  #logo {
+    transform: translate(1.5em);
+  }
+
+  #mudra {
+    transform: translate(1.5em);
+  }
+
+  .sunmoon-panel {
+    margin-top: .5em;
+    height: 2.5em;
+    width: 4em;
+    border-radius: .75em;
+    border-width: .05em;
+  }
+
+  .panel-text {
+    font-size: .5em;
+  }
+
+  #sun-icon {
+    margin-left: .3em;
+    margin-top: .2em;
+    height: .5em;
+    width: auto;
+  }
+
+  .sunmoon-panel br {
+    display: none;
+  }
+
+  #moon-icon img{
+    margin-left: .3em;
+    margin-top: .2em;
+    height: .5em;
+    width: auto;
+  }
+
+  .appear {
+    display: none;
+    margin-left: 145%;
+    margin-top: -65%;
+    font-size: .3em;
+  }
+
+  #blurb-content {
+    font-size: 50%;
+  }
+
+  #halfmoon-two img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+
   #site-name {
     font-size: .75em;
   }
 
   #ring input {
-    position: fixed;
     left: 68%;
     top: 45%;
     width: 1em; height: 1em;
