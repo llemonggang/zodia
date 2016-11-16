@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">s
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Zeyada|Open+Sans" rel="stylesheet">
 
@@ -15,103 +14,105 @@
   </head>
   <body>
 
-  <div id="container">
+  <div class="container-fluid">
     <div class="row">
+      <div class="col-xs-2">
+        <div id="site-name">zodia</div>
 
+          <div class="sunmoon-panel">
+            <img id="sun-icon" src="./images/sun.png" alt="Sun Icon" /><br>
+            <p id="sunrise" class="panel-text"></p>
+            <p id="sunset" class="panel-text"></p>
+          </div>
+
+          <div class="sunmoon-panel">
+            <p id="moon-icon"><img src="./images/full.png" alt="Moon Icon" /></p><br>
+            <p id="moonphase" class="panel-text"></p>
+          </div>
+      </div>
+
+      <div class="col-xs-2">
+        <div id="halfmoon">
+          <img id="buddha" class="logo" src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
+          <img id="logo" class="logo" src="./images/logo.png" alt="Logo" title="Logo" /><br>
+          <img id="mudra" class="logo" src="./images/mudra.png" alt="Mudra" title="Mudra" />
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <ul id="navbar">
+          <li><img src="./images/daily.png" title="Daily Horoscope" alt="Daily Horoscope" class="icons" id="daily-icon" /></li>
+          <li><img src="./images/love.png" title="Love Horoscope" alt="Love Horoscope" class="icons" id="love-icon" /></li>
+          <li><img src="./images/wellness.png" title="Wellness Horoscope" alt="Wellness Horoscope" class="icons" id="wellness-icon" /></li>
+          <li><img src="./images/career.png" title="Career Horoscope" alt="Career Horoscope" class="icons" id="career-icon" /></li>
+          <li><img src="./images/circle.png" title="home page" alt="home page" class="icons" id="circle-icon"/></li>
+        </ul>
+
+          <div id="blurb">
+            <div id="sun-sign"></div>
+            <div id="blurb-content"></div>
+          </div>
+
+          <div id="halfmoon-two">
+            <img src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
+            <img src="./images/logo.png" alt="Logo" title="Logo" /><br>
+            <img src="./images/mudra.png" alt="Mudra" title="Mudra" />
+          </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div id="ring">
+          <div class="hover">
+            <input type="image" src="./images/cancer.png" title="cancer" data-sign="cancer" alt="cancer"  id="cancer" class='sign' /><div class="appear">cancer</br>June<span>21</span> - July<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/leo.png" title="leo" data-sign="leo" alt="leo" id="leo" class='sign' /><div class="appear"id="cancer">leo</br>July<span>21</span> - August<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/virgo.png" title="virgo" data-sign="virgo" alt="virgo" id="virgo" class='sign' /><div class="appear">virgo</br>August<span>21</span> - September<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/libra.png" title="libra" data-sign="libra" alt="libra" id="libra" class='sign' /><div class="appear">libra</br>September<span>21</span> - October<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/scorpio.png" title="scorpio" data-sign="scorpio" alt="scorpio"  id="scorpio" class='sign' /><div class="appear">scorpio</br>October<span>21</span> - November<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/sagittarius.png" title="sagittarius" data-sign="sagittarius" alt="sagittarius" id="sagittarius" class='sign' /><div class="appear">sagittarius</br>November<span>21</span> - December<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/capricorn.png" title="capricorn" data-sign="capricorn" alt="capricorn" id="capricorn" class='sign' /><div class="appear">capricorn</br>December<span>21</span> - January<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/aquarius.png" title="aquarius" data-sign="aquarius" alt="aquarius" id="aquarius" class='sign' /><div class="appear">aquarius</br>January<span>21</span> - February<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/pisces.png" title="pisces" data-sign="pisces" alt="pisces" id="pisces" class='sign' /><div class="appear">pisces</br>February<span>21</span> - March<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/aries.png" title="aries" data-sign="aries" alt="aries" id="aries" class='sign' /><div class="appear">aries</br>March<span>21</span> - April<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/taurus.png" title="taurus" data-sign="taurus" alt="taurus" id="taurus" class='sign' /><div class="appear">taurus</br>April<span>21</span> - May<span>22</span>
+            </div>
+          </div>
+          <div class="hover">
+            <input type="image" src="./images/gemini.png" title="gemini" data-sign="gemini" alt="gemini" id="gemini" class='sign' /><div class="appear">gemini</br>May<span>21</span> - June<span>22</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div id="site-name">zodia</div>
-
-      <div class="sunmoon-panel">
-        <img id="sun-icon" src="./images/sun.png" alt="Sun Icon" /><br>
-        <p id="sunrise" class="panel-text"></p>
-        <p id="sunset" class="panel-text"></p>
-      </div>
-
-      <div class="sunmoon-panel">
-        <p id="moon-icon"><img src="./images/full.png" alt="Moon Icon" /></p><br>
-        <p id="moonphase" class="panel-text"></p>
-      </div>
-
-    <div id="halfmoon">
-      <img id="buddha" class="logo" src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-      <img id="logo" class="logo" src="./images/logo.png" alt="Logo" title="Logo" /><br>
-      <img id="mudra" class="logo" src="./images/mudra.png" alt="Mudra" title="Mudra" />
-    </div>
-
-    <ul id="navbar">
-      <li><img src="./images/daily.png" title="Daily Horoscope" alt="Daily Horoscope" class="icons" id="daily-icon" /></li>
-      <li><img src="./images/love.png" title="Love Horoscope" alt="Love Horoscope" class="icons" id="love-icon" /></li>
-      <li><img src="./images/wellness.png" title="Wellness Horoscope" alt="Wellness Horoscope" class="icons" id="wellness-icon" /></li>
-      <li><img src="./images/career.png" title="Career Horoscope" alt="Career Horoscope" class="icons" id="career-icon" /></li>
-      <li><img src="./images/circle.png" title="home page" alt="home page" class="icons" id="circle-icon"/></li>
-    </ul>
-
-    <div id="horoscope">
-
-      <div id="blurb">
-        <div id="sun-sign"></div>
-        <div id="blurb-content"></div>
-      </div>
-
-      <div id="halfmoon-two">
-        <img src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-        <img src="./images/logo.png" alt="Logo" title="Logo" /><br>
-        <img src="./images/mudra.png" alt="Mudra" title="Mudra" />
-      </div>
-
-      <div id="ring">
-        <div class="hover">
-          <input type="image" src="./images/cancer.png" title="cancer" data-sign="cancer" alt="cancer" class='sign deg0' /><div class="appear">cancer</br>June<span>21</span> - July<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/leo.png" title="leo" data-sign="leo" alt="leo" class='sign deg30 leo' /><div class="appear">leo</br>July<span>21</span> - August<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/virgo.png" title="virgo" data-sign="virgo" alt="virgo" class='sign deg60' /><div class="appear">virgo</br>August<span>21</span> - September<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/libra.png" title="libra" data-sign="libra" alt="libra" class='sign deg90' /><div class="appear">libra</br>September<span>21</span> - October<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/scorpio.png" title="scorpio" data-sign="scorpio" alt="scorpio" class='sign deg120' /><div class="appear">scorpio</br>October<span>21</span> - November<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/sagittarius.png" title="sagittarius" data-sign="sagittarius" alt="sagittarius" class='sign deg150' /><div class="appear">sagittarius</br>November<span>21</span> - December<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/capricorn.png" title="capricorn" data-sign="capricorn" alt="capricorn" class='sign deg180' /><div class="appear">capricorn</br>December<span>21</span> - January<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/aquarius.png" title="aquarius" data-sign="aquarius" alt="aquarius" class='sign deg210' /><div class="appear">aquarius</br>January<span>21</span> - February<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/pisces.png" title="pisces" data-sign="pisces" alt="pisces" class='sign deg240' /><div class="appear">pisces</br>February<span>21</span> - March<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/aries.png" title="aries" data-sign="aries" alt="aries" class='sign deg270' /><div class="appear">aries</br>March<span>21</span> - April<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/taurus.png" title="taurus" data-sign="taurus" alt="taurus" class='sign deg300' /><div class="appear">taurus</br>April<span>21</span> - May<span>22</span>
-          </div>
-        </div>
-        <div class="hover">
-          <input type="image" src="./images/gemini.png" title="gemini" data-sign="gemini" alt="gemini" class='sign deg330' /><div class="appear">gemini</br>May<span>21</span> - June<span>22</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <script

@@ -6,14 +6,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#container {
+.container-fluid {
   padding: 1em;
 }
 
 /*home page*/
 
 .sunmoon-panel {
-  margin-left: 1em;
   margin-top: 1em;
   background-color: rgba(246, 211, 19, 0.7);
   height: 4.5em;
@@ -54,8 +53,6 @@ body {
   height: 1em;
   width: auto;
   margin-left: 27%;
-                          /*the same thing!*/
-  /*margin-bottom: 10%;*/
   margin top: 93%;
 }
 
@@ -67,25 +64,24 @@ body {
 }
 
 #ring input {
-  display: block;
-  position: absolute;
+  position: fixed;
   left: 65%;
   top: 45%;
   width: 1.5em; height: 1.5em;
 }
 
-.deg0 { transform: translate(8.5em); }
-.deg30 { transform: rotate(30deg) translate(8.5em) rotate(-30deg); }
-.deg60 { transform: rotate(60deg) translate(8.5em) rotate(-60deg); }
-.deg90 { transform: rotate(90deg) translate(8.5em) rotate(-90deg); }
-.deg120 { transform: rotate(120deg) translate(8.5em) rotate(-120deg); }
-.deg150 { transform: rotate(150deg) translate(8.5em) rotate(-150deg); }
-.deg180 { transform: translate(-8.5em); }
-.deg210 { transform: rotate(210deg) translate(8.5em) rotate(-210deg); }
-.deg240 { transform: rotate(240deg) translate(8.5em) rotate(-240deg); }
-.deg270 { transform: rotate(270deg) translate(8.5em) rotate(-270deg); }
-.deg300 { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
-.deg330 { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
+#cancer { transform: translate(8.5em); }
+#leo { transform: rotate(30deg) translate(8.5em) rotate(-30deg); }
+#virgo { transform: rotate(60deg) translate(8.5em) rotate(-60deg); }
+#libra { transform: rotate(90deg) translate(8.5em) rotate(-90deg); }
+#scorpio { transform: rotate(120deg) translate(8.5em) rotate(-120deg); }
+#sagittarius { transform: rotate(150deg) translate(8.5em) rotate(-150deg); }
+#capricorn { transform: translate(-8.5em); }
+#aquarius { transform: rotate(210deg) translate(8.5em) rotate(-210deg); }
+#pisces { transform: rotate(240deg) translate(8.5em) rotate(-240deg); }
+#aries { transform: rotate(270deg) translate(8.5em) rotate(-270deg); }
+#taurus { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
+#gemini { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
 
 .hover:hover .appear {
     display: block;
@@ -94,7 +90,6 @@ body {
 .appear {
   display: none;
   margin-left: 3%;
-  margin-top: -13%;
   font-size: .8em;
   text-transform: uppercase;
 }
@@ -151,6 +146,8 @@ input, input:focus{
 /*halfmoon*/
 
 #halfmoon img {
+  margin-left: 50%;
+  margin-top: 75%;
   width: 1.5em; height: 1.5em;
   background-color: #50C5D6;
   border-radius: 1em;
