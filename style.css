@@ -178,10 +178,25 @@ input, input:focus{
 }
 
 @media (min-width: @screen-sm-min) {
+  #site-name {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    font-size: .5em;
+    color: tomato;
+  }
 }
 
 
 @media (min-width: @screen-md-min) {
+  #site-name {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    font-size: .5em;
+    color: blue;
+  }
+
   #ring input {
     position: fixed;
     left: 65%;
