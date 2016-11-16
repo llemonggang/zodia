@@ -176,3 +176,25 @@ input, input:focus{
   padding: .3em;
   float: right;
 }
+
+@media (min-width: @screen-md-min) {
+  #ring input {
+    position: fixed;
+    left: 65%;
+    top: 45%;
+    width: 1.5em; height: 1.5em;
+  }
+
+  #cancer { transform: translate(6em); }
+  #leo { transform: rotate(30deg) translate(6em) rotate(-30deg); }
+  #virgo { transform: rotate(60deg) translate(6em) rotate(-60deg); }
+  #libra { transform: rotate(90deg) translate(6em) rotate(-90deg); }
+  #scorpio { transform: rotate(120deg) translate(6em) rotate(-120deg); }
+  #sagittarius { transform: rotate(150deg) translate(6em) rotate(-150deg); }
+  #capricorn { transform: translate(-6em); }
+  #aquarius { transform: rotate(210deg) translate(6em) rotate(-210deg); }
+  #pisces { transform: rotate(240deg) translate(6em) rotate(-240deg); }
+  #aries { transform: rotate(270deg) translate(6em) rotate(-270deg); }
+  #taurus { transform: rotate(300deg) translate(6em) rotate(-300deg); }
+  #gemini { transform: rotate(330deg) translate(6em) rotate(-330deg); }
+}
