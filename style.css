@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.container {
+.container-fluid {
   padding: 1em;
 }
 
@@ -176,6 +176,10 @@ input, input:focus{
   padding: .3em;
   float: right;
 }
+
+@media (min-width: @screen-sm-min) {
+}
+
 
 @media (min-width: @screen-md-min) {
   #ring input {
