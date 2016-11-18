@@ -260,6 +260,7 @@ input, input:focus{
   }
 
   .appear {
+    text-align: center;
     display: none;
     margin-left: 145%;
     margin-top: -65%;
