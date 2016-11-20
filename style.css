@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 400%;
   color: white;
-  background-image: url('./images/apod.jpg');
+  background-image: url('./images/november.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,14 +14,14 @@ body {
 
 .sunmoon-panel {
   margin-top: 1em;
-  background-color: rgba(246, 211, 19, 0.7);
+  /*background-color: rgba(167, 187, 223, 0.7);*/
   height: 4.5em;
   width: 4.5em;
   padding: .2em;
-  border-radius: 1.3em;
-  border-color: white;
+  /*border-radius: 1.3em;*/
+  /*border-color: white;
   border-width: .1em;
-  border-style: solid;
+  border-style: solid;*/
 }
 
 #sun-icon {
@@ -95,7 +95,7 @@ body {
 }
 
 #ring span {
-  color: #F6D313;
+  color: #F25656;
 }
 
 /*removes blue box from border*/
@@ -149,7 +149,7 @@ input, input:focus{
   margin-left: 50%;
   margin-top: 75%;
   width: 1.5em; height: 1.5em;
-  background-color: #50C5D6;
+  background-color: #BEB6D7;
   border-radius: 1em;
   padding: .3em;
 }
@@ -171,7 +171,7 @@ input, input:focus{
 
 #halfmoon-two img {
   width: 1.5em; height: 1.5em;
-  background-color: #50C5D6;
+  background-color: #BEB6D7;
   border-radius: 1em;
   padding: .3em;
   float: right;
@@ -305,7 +305,7 @@ input, input:focus{
     margin-left: 50%;
     margin-top: 75%;
     width: 1em; height: 1em;
-    background-color: #50C5D6;
+    background-color: #BEB6D7;
     border-radius: 1em;
     padding: .1em;
   }
