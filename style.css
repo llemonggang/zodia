@@ -3,8 +3,8 @@ body {
   font-size: 400%;
   color: white;
   background-image: url('./images/new_apod.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
 .container-fluid {
   padding: 1em;
