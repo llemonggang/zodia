@@ -85,7 +85,8 @@ body {
 }
 
 #ring span {
-  color: #F25656;
+  color: black;
+  font-weight: bold;
 }
 
 /*removes blue box from border*/
