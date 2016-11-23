@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 400%;
   color: white;
-  background-image: url('./images/november.jpg');
+  background-image: url('./images/new_apod.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,39 +14,29 @@ body {
 
 .sunmoon-panel {
   margin-top: 1em;
-  /*background-color: rgba(167, 187, 223, 0.7);*/
+  background-color: rgba(0, 0, 0, 0.7);
   height: 4.5em;
-  width: 4.5em;
+  width: 5em;
   padding: .2em;
-  /*border-radius: 1.3em;*/
-  /*border-color: white;
-  border-width: .1em;
-  border-style: solid;*/
+  border-radius: .7em;
 }
 
 #sun-icon {
-  margin-left: .3em;
-  margin-top: .2em;
   height: 1.3em;
   width: auto;
-  float: left;
+  display: block;
 }
 
 #moon-icon img{
-  margin-left: .3em;
-  margin-top: .2em;
   height: 1.1em;
   width: auto;
-  float: left;
+  display: block;
 }
 
 .panel-text {
+  padding: .5em;
   font-size: .5em;
-  margin-left: 1.3em;
-}
-
-#sunrise {
-  margin-top: 10%;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -230,7 +220,6 @@ input, input:focus{
   }
 
   .sunmoon-panel {
-    margin-top: .5em;
     height: 2.5em;
     width: 4em;
     border-radius: .75em;
@@ -242,8 +231,6 @@ input, input:focus{
   }
 
   #sun-icon {
-    margin-left: .3em;
-    margin-top: .2em;
     height: .5em;
     width: auto;
   }
@@ -253,8 +240,6 @@ input, input:focus{
   }
 
   #moon-icon img{
-    margin-left: .3em;
-    margin-top: .2em;
     height: .5em;
     width: auto;
   }
