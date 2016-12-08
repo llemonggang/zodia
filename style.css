@@ -21,16 +21,23 @@ body {
   border-radius: .7em;
 }
 
+.inner-box {
+  padding: .5em;
+  text-align: center;
+}
+
 #sun-icon {
   height: 1.3em;
   width: auto;
   display: block;
+  margin: 0 auto;
 }
 
 #moon-icon img{
   height: 1.1em;
   width: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .panel-text {
