@@ -2,9 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 400%;
   color: white;
-  background-image: url('./images/new_apod.jpg');
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
+  background-image: url('./images/moon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container-fluid {
   padding: 1em;
