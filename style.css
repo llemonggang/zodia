@@ -67,6 +67,7 @@ body {
   position: fixed;
   text-transform: uppercase;
   font-size: 2.5em;
+  margin-left: 1em;
 }
 
 #ring input {
