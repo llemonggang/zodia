@@ -202,7 +202,7 @@ input, input:focus{
 
   #site-name {
     font-size: .75em;
-    text-align: center;
+    margin-left: 3em;
   }
 
   #ring input {
