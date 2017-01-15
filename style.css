@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 400%;
   color: white;
-  background-image: url('./images/moon.jpg');
+  background-image: url('./images/three.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -194,14 +194,14 @@ input, input:focus{
 
 /*RESPONSIVE DESIGNS*/
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   #ring {
     margin-top: 250%;
   }
 
   #site-name {
-    margin: 0 auto;
     font-size: .75em;
+    text-align: center;
   }
 
   #ring input {
@@ -286,7 +286,7 @@ input, input:focus{
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 767px) {
+/*@media screen and (min-width: 321px) and (max-width: 767px) {
 
   #site-name {
     font-size: .75em;
@@ -405,4 +405,4 @@ input, input:focus{
   #aries { transform: rotate(270deg) translate(6em) rotate(-270deg); }
   #taurus { transform: rotate(300deg) translate(6em) rotate(-300deg); }
   #gemini { transform: rotate(330deg) translate(6em) rotate(-330deg); }
-}
+}*/
