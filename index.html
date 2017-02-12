@@ -14,58 +14,8 @@
   </head>
   <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-2">
-        <div id="site-name">zodia</div>
-
-          <div id="lefty" class="sunmoon-panel">
-            <div class="inner-box" >
-              <p id="moon-icon"><img src="./images/full.png" alt="Moon Icon" /></p>
-              <p id="moonphase" class="panel-text"></p>
-            </div>
-          </div>
-
-          <div id="righty" class="sunmoon-panel">
-            <div class="inner-box">
-              <img id="sun-icon" src="./images/sun.png" alt="Sun Icon" />
-              <div class="panel-text">
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-            </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="col-xs-2">
-        <!-- <div id="halfmoon">
-          <img id="buddha" class="logo" src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-          <img id="logo" class="logo" src="./images/logo.png" alt="Logo" title="Logo" /><br>
-          <img id="mudra" class="logo" src="./images/mudra.png" alt="Mudra" title="Mudra" />
-        </div> -->
-      </div>
-
-      <div class="col-xs-12">
-        <ul id="navbar">
-          <li><img src="./images/daily.png" title="Daily Horoscope" alt="Daily Horoscope" class="icons" id="daily-icon" /></li>
-          <li><img src="./images/love.png" title="Love Horoscope" alt="Love Horoscope" class="icons" id="love-icon" /></li>
-          <li><img src="./images/wellness.png" title="Wellness Horoscope" alt="Wellness Horoscope" class="icons" id="wellness-icon" /></li>
-          <li><img src="./images/career.png" title="Career Horoscope" alt="Career Horoscope" class="icons" id="career-icon" /></li>
-          <li><img src="./images/circle.png" title="home page" alt="home page" class="icons" id="circle-icon"/></li>
-        </ul>
-
-          <div id="blurb">
-            <div id="sun-sign"></div>
-            <div id="blurb-content"></div>
-          </div>
-
-          <!-- <div id="halfmoon-two">
-            <img src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-            <img src="./images/logo.png" alt="Logo" title="Logo" /><br>
-            <img src="./images/mudra.png" alt="Mudra" title="Mudra" />
-          </div> -->
-      </div>
-
+  <div class="container">
+    <div id="pageOne" class="row">
       <div class="col-xs-6">
         <div id="ring">
           <div class="hover">
@@ -118,7 +68,60 @@
           </div>
         </div>
       </div>
+      <div class="col-xs-2">
+          <div id="topBox" class="sunmoon-panel">
+            <div class="inner-box" >
+              <p id="moon-icon"><img src="./images/full.png" alt="Moon Icon" /></p>
+              <p id="moonphase" class="panel-text"></p>
+            </div>
+          </div>
+
+          <div id="bottomBox" class="sunmoon-panel">
+            <div class="inner-box">
+              <img id="sun-icon" src="./images/sun.png" alt="Sun Icon" />
+              <div class="panel-text">
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div id="site-name" class="col-xs-4">zodia</div>
     </div>
+
+    <!-- page two start -->
+
+    <div id="pageTwo" class="row">
+      <div class="col-xs-2">
+        <!-- <div id="halfmoon">
+          <img id="buddha" class="logo" src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
+          <img id="logo" class="logo" src="./images/logo.png" alt="Logo" title="Logo" /><br>
+          <img id="mudra" class="logo" src="./images/mudra.png" alt="Mudra" title="Mudra" />
+        </div> -->
+      </div>
+
+      <div class="col-xs-12">
+        <ul id="navbar">
+          <li><img src="./images/daily.png" title="Daily Horoscope" alt="Daily Horoscope" class="icons" id="daily-icon" /></li>
+          <li><img src="./images/love.png" title="Love Horoscope" alt="Love Horoscope" class="icons" id="love-icon" /></li>
+          <li><img src="./images/wellness.png" title="Wellness Horoscope" alt="Wellness Horoscope" class="icons" id="wellness-icon" /></li>
+          <li><img src="./images/career.png" title="Career Horoscope" alt="Career Horoscope" class="icons" id="career-icon" /></li>
+          <li><img src="./images/circle.png" title="home page" alt="home page" class="icons" id="circle-icon"/></li>
+        </ul>
+
+          <div id="blurb">
+            <div id="sun-sign"></div>
+            <div id="blurb-content"></div>
+          </div>
+
+          <!-- <div id="halfmoon-two">
+            <img src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
+            <img src="./images/logo.png" alt="Logo" title="Logo" /><br>
+            <img src="./images/mudra.png" alt="Mudra" title="Mudra" />
+          </div> -->
+      </div>
+
+      </div>
   </div>
 
   <script

@@ -2,20 +2,23 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 400%;
   color: white;
-  background-image: url('./images/three.jpg');
+}
+
+.container {
+  background-image: url('./images/apod.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-.container-fluid {
-  padding: 1em;
+  background-attachment: fixed;
+  height: 25em;
+  width: 100%;
 }
 
 /*home page*/
 
 .sunmoon-panel {
   position: fixed;
-  margin-top: 15em;
-  margin-left: 3em;
+  margin-top: em;
+  margin-left: em;
   background-color: rgba(255, 255, 255, 0.3);
   height: 4.5em;
   width: 5em;
@@ -23,12 +26,14 @@ body {
   border-radius: .7em;
 }
 
-#lefty {
-  margin-left: 1em;
+#topBox {
+  margin-left: 3.5em;
+  margin-top: 4.5em;
 }
 
-#righty {
-  margin-left: 8em;
+#bottomBox {
+  margin-left: 3.5em;
+  margin-top: 11.5em;
 }
 
 .inner-box {
@@ -66,13 +71,18 @@ body {
 #site-name {
   position: fixed;
   text-transform: uppercase;
-  font-size: 2.5em;
-  margin-left: .5em;
+  font-size: 5.5em;
+  transform: rotate(90deg);
+  transform-origin: 150% 240%;
+}
+
+#ring {
+  position: static;
 }
 
 #ring input {
   position: fixed;
-  left: 65%;
+  left: 26%;
   top: 45%;
   width: 1.5em; height: 1.5em;
 }
@@ -91,7 +101,7 @@ body {
 #gemini { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
 
 .hover:hover .appear {
-    display: block;
+    display: none;
 }
 
 .appear {
@@ -192,218 +202,3 @@ input, input:focus{
   padding: .3em;
   float: right;
 }
-
-/*RESPONSIVE DESIGNS*/
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  #ring {
-    margin-top: 250%;
-  }
-
-  #site-name {
-    font-size: .75em;
-    margin-left: 3em;
-  }
-
-  #ring input {
-    position: absolute;
-    width: 1em; height: 1em;
-  }
-
-  #cancer { transform: translate(2.5em); }
-  #leo { transform: rotate(30deg) translate(2.5em) rotate(-30deg); }
-  #virgo { transform: rotate(60deg) translate(2.5em) rotate(-60deg); }
-  #libra { transform: rotate(90deg) translate(2.5em) rotate(-90deg); }
-  #scorpio { transform: rotate(120deg) translate(2.5em) rotate(-120deg); }
-  #sagittarius { transform: rotate(150deg) translate(2.5em) rotate(-150deg); }
-  #capricorn { transform: translate(-2.5em); }
-  #aquarius { transform: rotate(210deg) translate(2.5em) rotate(-210deg); }
-  #pisces { transform: rotate(240deg) translate(2.5em) rotate(-240deg); }
-  #aries { transform: rotate(270deg) translate(2.5em) rotate(-270deg); }
-  #taurus { transform: rotate(300deg) translate(2.5em) rotate(-300deg); }
-  #gemini { transform: rotate(330deg) translate(2.5em) rotate(-330deg); }
-
-  #halfmoon img {
-    /*margin-left: 50%;
-    margin-top: 75%;
-    width: 1em; height: 1em;
-    background-color: #50C5D6;
-    border-radius: 1em;
-    padding: .1em;*/
-    display: none;
-  }
-
-  #buddha {
-    transform: translate(1.5em);
-  }
-
-  #logo {
-    transform: translate(1.5em);
-  }
-
-  #mudra {
-    transform: translate(1.5em);
-  }
-
-  .sunmoon-panel {
-    height: 2.5em;
-    width: 4em;
-    border-radius: .75em;
-    border-width: .05em;
-  }
-
-  .panel-text {
-    font-size: .5em;
-  }
-
-  #sun-icon {
-    height: .5em;
-    width: auto;
-  }
-
-  .sunmoon-panel br {
-    display: none;
-  }
-
-  #moon-icon img{
-    height: .5em;
-    width: auto;
-  }
-
-  .appear {
-    text-align: center;
-    display: none;
-    margin-left: 145%;
-    margin-top: -65%;
-    font-size: .3em;
-  }
-
-  #blurb-content {
-    font-size: 50%;
-  }
-
-  #halfmoon-two img {
-    display: none;
-  }
-}
-
-/*@media screen and (min-width: 321px) and (max-width: 767px) {
-
-  #site-name {
-    font-size: .75em;
-  }
-
-  #ring input {
-    left: 68%;
-    top: 45%;
-    width: 1em; height: 1em;
-  }
-
-  #cancer { transform: translate(3em); }
-  #leo { transform: rotate(30deg) translate(3em) rotate(-30deg); }
-  #virgo { transform: rotate(60deg) translate(3em) rotate(-60deg); }
-  #libra { transform: rotate(90deg) translate(3em) rotate(-90deg); }
-  #scorpio { transform: rotate(120deg) translate(3em) rotate(-120deg); }
-  #sagittarius { transform: rotate(150deg) translate(3em) rotate(-150deg); }
-  #capricorn { transform: translate(-3em); }
-  #aquarius { transform: rotate(210deg) translate(3em) rotate(-210deg); }
-  #pisces { transform: rotate(240deg) translate(3em) rotate(-240deg); }
-  #aries { transform: rotate(270deg) translate(3em) rotate(-270deg); }
-  #taurus { transform: rotate(300deg) translate(3em) rotate(-300deg); }
-  #gemini { transform: rotate(330deg) translate(3em) rotate(-330deg); }
-
-  #halfmoon img {
-    margin-left: 50%;
-    margin-top: 75%;
-    width: 1em; height: 1em;
-    background-color: #BEB6D7;
-    border-radius: 1em;
-    padding: .1em;
-  }
-
-  #buddha {
-    transform: translate(1.5em);
-  }
-
-  #logo {
-    transform: translate(1.5em);
-  }
-
-  #mudra {
-    transform: translate(1.5em);
-  }
-
-  .sunmoon-panel {
-    margin-top: .5em;
-    height: 2.5em;
-    width: 4em;
-    border-radius: .75em;
-    border-width: .05em;
-  }
-
-  .panel-text {
-    font-size: .5em;
-  }
-
-  #sun-icon {
-    margin-left: .3em;
-    margin-top: .2em;
-    height: .5em;
-    width: auto;
-  }
-
-  .sunmoon-panel br {
-    display: none;
-  }
-
-  #moon-icon img{
-    margin-left: .3em;
-    margin-top: .2em;
-    height: .5em;
-    width: auto;
-  }
-
-  .appear {
-    display: none;
-    margin-left: 145%;
-    margin-top: -65%;
-    font-size: .3em;
-  }
-
-  #blurb-content {
-    font-size: 50%;
-  }
-
-  #halfmoon-two img {
-    display: none;
-  }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 900px) {
-
-}
-
-
-@media screen and (min-width: 901px) and (max-width: 1199px) {
-
-  #ring input {
-    position: absulute;
-    left: 65%;
-    top: 45%;
-    width: 1.5em; height: 1.5em;
-  }
-
-  #cancer { transform: translate(6em); }
-  #leo { transform: rotate(30deg) translate(6em) rotate(-30deg); }
-  #virgo { transform: rotate(60deg) translate(6em) rotate(-60deg); }
-  #libra { transform: rotate(90deg) translate(6em) rotate(-90deg); }
-  #scorpio { transform: rotate(120deg) translate(6em) rotate(-120deg); }
-  #sagittarius { transform: rotate(150deg) translate(6em) rotate(-150deg); }
-  #capricorn { transform: translate(-6em); }
-  #aquarius { transform: rotate(210deg) translate(6em) rotate(-210deg); }
-  #pisces { transform: rotate(240deg) translate(6em) rotate(-240deg); }
-  #aries { transform: rotate(270deg) translate(6em) rotate(-270deg); }
-  #taurus { transform: rotate(300deg) translate(6em) rotate(-300deg); }
-  #gemini { transform: rotate(330deg) translate(6em) rotate(-330deg); }
-}*/
