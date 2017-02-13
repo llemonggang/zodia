@@ -15,24 +15,23 @@ body {
 
 /*home page*/
 
-.sunmoon-panel {
+#sunmoon-panel {
   position: fixed;
-  margin-top: em;
-  margin-left: em;
   background-color: rgba(255, 255, 255, 0.3);
-  height: 4.5em;
-  width: 5em;
-  padding: .2em;
+  height: 10em;
+  width: 4em;
   border-radius: .7em;
+  margin-top: 6em;
+  margin-left: 1em;
 }
 
 #topBox {
-  margin-left: 3.5em;
+  /*margin-left: 3.5em;*/
   margin-top: 4.5em;
 }
 
 #bottomBox {
-  margin-left: 3.5em;
+  /*margin-left: 3.5em;*/
   margin-top: 11.5em;
 }
 
@@ -71,19 +70,26 @@ body {
 #site-name {
   position: fixed;
   text-transform: uppercase;
-  font-size: 5.5em;
+  font-size: 5.6em;
+  letter-spacing: .2em;
   transform: rotate(90deg);
-  transform-origin: 150% 240%;
+  margin-left: 4.5em;
+  margin-top: .2em;
+  border-bottom: thin solid #ffffff;
+}
+
+.sign {
+  position: absolute;
 }
 
 #ring {
-  position: static;
+  position: fixed;
 }
 
 #ring input {
-  position: fixed;
-  left: 26%;
-  top: 45%;
+  position: absolute;
+  margin-left: 10em;
+  margin-top: 10em;
   width: 1.5em; height: 1.5em;
 }
 
@@ -101,17 +107,21 @@ body {
 #gemini { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
 
 .hover:hover .appear {
-    display: none;
+  display: none;
 }
 
 .appear {
-  position: fixed;
-  margin-top: 75px;
+  position: absolute;
   text-align: center;
   display: none;
   font-size: .8em;
   text-transform: uppercase;
-  padding-top: .8em;
+  margin-top: 11em;
+  margin-left: 13em;
+}
+
+.whipple {
+  display: none;
 }
 
 #ring span {
