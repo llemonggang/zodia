@@ -1,6 +1,7 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Sofia', cursive;
   font-size: 400%;
+  letter-spacing: .2em;
   color: white;
 }
 
@@ -15,30 +16,20 @@ body {
 
 /*home page*/
 
-#sunmoon-panel {
+/*#sunmoon-panel {
+  display: block;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.3);
   height: 10em;
-  width: 4em;
-  border-radius: .7em;
+  width: 3.5em;
   margin-top: 6em;
   margin-left: 1em;
 }
 
-#topBox {
-  /*margin-left: 3.5em;*/
-  margin-top: 4.5em;
-}
-
-#bottomBox {
-  /*margin-left: 3.5em;*/
-  margin-top: 11.5em;
-}
-
-.inner-box {
-  padding: .5em;
-  text-align: center;
-}
+#sunmoon-panel li {
+  list-style: none;
+  /*display: inline;*/
+}*/
 
 #sun-icon {
   height: 1.3em;
@@ -60,16 +51,10 @@ body {
   text-transform: uppercase;
 }
 
-.logo {
-  height: 1em;
-  width: auto;
-  margin-left: 27%;
-  margin top: 93%;
-}
-
 #site-name {
   position: fixed;
   text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 5.6em;
   letter-spacing: .2em;
   transform: rotate(90deg);
@@ -120,20 +105,6 @@ body {
   margin-left: 13em;
 }
 
-.whipple {
-  display: none;
-}
-
-#ring span {
-  color: black;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 4.5em;
-  width: 5em;
-  padding: .2em;
-  border-radius: .7em;
-}
-
 /*removes blue box from border*/
 input, input:focus{
         border-width: 0em;
@@ -169,6 +140,10 @@ input, input:focus{
   text-transform: uppercase;
 }
 
+#sun-sign p {
+  text-align: center;
+}
+
 #blurb {
   display: block;
   margin: 1em;
@@ -177,6 +152,7 @@ input, input:focus{
 
 #blurb-content {
   font-weight: 100;
+  text-align: justify;
 }
 
 /*halfmoon*/

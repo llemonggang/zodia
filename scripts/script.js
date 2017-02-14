@@ -102,7 +102,7 @@ $( document ).ready(function() {
       var sign = $(this).data('sign');
       var currentSign = data[key[sign]];
       $('#halfmoon').hide();
-      $('.sunmoon-panel').hide();
+      $('#sunmoon-panel').hide();
       $('#ring').hide();
       $('#site-name').hide();
       $('.logo').hide();
@@ -120,7 +120,7 @@ $( document ).ready(function() {
       $('#sun-sign').html('<p>' + ' ' + '</p>');
       $('#blurb-content').html('<p>' + ' ' + '</p>');
       $('#halfmoon').show();
-      $('.sunmoon-panel').show();
+      $('#sunmoon-panel').show();
       $('#ring').show();
       $('#site-name').show();
       $('.logo').show();
