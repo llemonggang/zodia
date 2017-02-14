@@ -147,17 +147,16 @@ input, input:focus{
 /*main page*/
 
 #navbar {
+  position: fixed;
   display: block;
-}
-
-#navbar ul {
-  margin-top: -1.5%;
+  text-align: center;
 }
 
 #navbar li {
   display: inline-block;
   list-style: none;
   padding: .4em;
+  margin-top: 1em;
 }
 
 .icons {
@@ -166,22 +165,21 @@ input, input:focus{
 }
 
 #sun-sign {
-  text-transform: uppercase;
-}
-
-#sun-sign p {
-  text-align: center;
-}
-
-#blurb {
+  position: fixed;
   display: block;
-  margin: 1em;
+  width: 100%;
+  text-transform: uppercase;
   margin-top: .7em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 #blurb-content {
+  padding: 1em;
+  margin-top: 3em;
   font-weight: 100;
   text-align: justify;
+  overflow: scroll;
 }
 
 /*halfmoon*/
