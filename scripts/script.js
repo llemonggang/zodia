@@ -106,6 +106,7 @@ $( document ).ready(function() {
       $('#ring').hide();
       $('#site-name').hide();
       $('.logo').hide();
+      $('#lines').hide();
       $('#halfmoon-two').show();
       $('#navbar').show();
       $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
@@ -119,6 +120,7 @@ $( document ).ready(function() {
       $('#halfmoon-two').hide();
       $('#sun-sign').html('<p>' + ' ' + '</p>');
       $('#blurb-content').html('<p>' + ' ' + '</p>');
+      $('#lines').show();
       $('#halfmoon').show();
       $('#sunmoon-panel').show();
       $('#ring').show();
