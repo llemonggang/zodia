@@ -16,22 +16,32 @@ body {
 
 /*home page*/
 
-.dot-the-i {
-  /*display: inline;*/
-  width: 10em;
+/*#sunmoon-panel {
+  display: block;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 10em;
+  width: 3.5em;
+  margin-top: 6em;
+  margin-left: 1em;
 }
+#sunmoon-panel li {
+  list-style: none;
+  /*display: inline;*/
+}*/
 
 #sun-icon {
-  transform: rotate(270deg);
-  height: 1.1em;
+  height: 1.3em;
   width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #moon-icon img{
-  /*float: right;*/
-  transform: rotate(270deg);
   height: 1.1em;
   width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .panel-text {
@@ -64,32 +74,21 @@ body {
 }
 
 #first {
-  width: 10em;
-  float: left;
   margin: 0;
+  width: 10em;
 }
 
 #second {
-  width: 8em;
-  float: left;
-  margin: 0;
+  width: 17em;
 }
 
 #third {
   width: 7em;
-  float: left;
   margin: 0;
 }
 
 #fourth {
   width: 8em;
-  float: left;
-  margin: 0;
-}
-#fifth {
-  width: 8em;
-  float: left;
-  margin: 0;
 }
 
 .sign {
