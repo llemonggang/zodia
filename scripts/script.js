@@ -65,7 +65,7 @@ $( document ).ready(function() {
   }
 
   $.ajax({
-  url:'https://zodia.herokuapp.com/zodiac',
+  url:'http://sandipbgt.com/theastrologer/api/horoscope/' + sign + '/today',
   }).done(function(data) {
 
     key = {
