@@ -6,12 +6,13 @@ body {
 }
 
 .container {
-  background-image: url('./images/apod.jpg');
-  background-size: cover;
+  background-image: url('./images/beach.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 25em;
   width: 100%;
+  margin: 15px;
 }
 
 /*home page*/
@@ -55,10 +56,10 @@ body {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 5.6em;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   transform: rotate(90deg);
   margin-left: 4.5em;
-  margin-top: .2em;
+  margin-top: .3em;
 }
 
 #lines {
@@ -102,7 +103,7 @@ body {
 #ring input {
   position: absolute;
   margin-left: 10em;
-  margin-top: 10em;
+  margin-top: 9em;
   width: 1.5em; height: 1.5em;
 }
 
