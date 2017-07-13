@@ -65,89 +65,93 @@ $( document ).ready(function() {
   }
 
   $.ajax({
+    
+    $('.sign').click(function() {
+      var sign = $(this);
+    });
+
   url:'http://sandipbgt.com/theastrologer/api/horoscope/' + sign + '/today',
   }).done(function(data) {
 
-    key = {
-      'aries': 0,
-      'taurus': 1,
-      'gemini': 2,
-      'cancer': 3,
-      'leo': 4,
-      'virgo': 5,
-      'libra': 6,
-      'scorpio': 7,
-      'sagittarius': 8,
-      'capricorn': 9,
-      'aquarius': 10,
-      'pisces': 11
-    }
+    console.log(data);
 
-    function showContent(data) {
-      $('#daily-icon').click(function() {
-        $('#blurb-content').html('<p>' + data.Daily_Horoscope + '</p>')
-      });
-      $('#love-icon').click(function() {
-        $('#blurb-content').html('<p>' + data.Love + '</p>')
-      });
-      $('#wellness-icon').click(function() {
-        $('#blurb-content').html('<p>' + data.Wellness + '</p>')
-      });
-      $('#career-icon').click(function() {
-        $('#blurb-content').html('<p>' + data.Career + '</p>')
-      });
-    };
+    // key = {
+    //   'aries': 0,
+    //   'taurus': 1,
+    //   'gemini': 2,
+    //   'cancer': 3,
+    //   'leo': 4,
+    //   'virgo': 5,
+    //   'libra': 6,
+    //   'scorpio': 7,
+    //   'sagittarius': 8,
+    //   'capricorn': 9,
+    //   'aquarius': 10,
+    //   'pisces': 11
+    // }
 
-    $('.sign').click(function() {
-      var sign = $(this).data('sign');
-      var currentSign = data[key[sign]];
-      $('#halfmoon').hide();
-      $('#sunmoon-panel').hide();
-      $('#ring').hide();
-      $('#site-name').hide();
-      $('.logo').hide();
-      $('#lines').hide();
-      $('#halfmoon-two').show();
-      $('#navbar').show();
-      $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
-      $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
-      showContent(currentSign);
-    });
+    // function showContent(data) {
+    //   $('#daily-icon').click(function() {
+    //     $('#blurb-content').html('<p>' + data.Daily_Horoscope + '</p>')
+    //   });
+    //   $('#love-icon').click(function() {
+    //     $('#blurb-content').html('<p>' + data.Love + '</p>')
+    //   });
+    //   $('#wellness-icon').click(function() {
+    //     $('#blurb-content').html('<p>' + data.Wellness + '</p>')
+    //   });
+    //   $('#career-icon').click(function() {
+    //     $('#blurb-content').html('<p>' + data.Career + '</p>')
+    //   });
+    // };
 
-    $('#circle-icon').click(function() {
-      $('.current').removeClass( "current" );
-      $('#navbar').hide();
-      $('#halfmoon-two').hide();
-      $('#sun-sign').html('<p>' + ' ' + '</p>');
-      $('#blurb-content').html('<p>' + ' ' + '</p>');
-      $('#lines').show();
-      $('#halfmoon').show();
-      $('#sunmoon-panel').show();
-      $('#ring').show();
-      $('#site-name').show();
-      $('.logo').show();
-    });
+    // $('.sign').click(function() {
+    //   var sign = $(this).data('sign');
+    //   var currentSign = data[key[sign]];
+    //   $('#halfmoon').hide();
+    //   $('#sunmoon-panel').hide();
+    //   $('#ring').hide();
+    //   $('#site-name').hide();
+    //   $('.logo').hide();
+    //   $('#lines').hide();
+    //   $('#halfmoon-two').show();
+    //   $('#navbar').show();
+    //   $('#sun-sign').html('<p>' + currentSign.Sign + '</p>');
+    //   $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
+    //   showContent(currentSign);
+    // });
 
-    $('#daily-icon').click(function(currentSign) {
-      $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
-    })
+    // $('#circle-icon').click(function() {
+    //   $('.current').removeClass( "current" );
+    //   $('#navbar').hide();
+    //   $('#halfmoon-two').hide();
+    //   $('#sun-sign').html('<p>' + ' ' + '</p>');
+    //   $('#blurb-content').html('<p>' + ' ' + '</p>');
+    //   $('#lines').show();
+    //   $('#halfmoon').show();
+    //   $('#sunmoon-panel').show();
+    //   $('#ring').show();
+    //   $('#site-name').show();
+    //   $('.logo').show();
+    // });
 
-    $('#love-icon').click(function(currentSign) {
-      $('#blurb-content').html('<p>' + currentSign.Love + '</p>');
-    })
+    // $('#daily-icon').click(function(currentSign) {
+    //   $('#blurb-content').html('<p>' + currentSign.Daily_Horoscope + '</p>');
+    // })
 
-    $('#wellness-icon').click(function(currentSign) {
-      $('#blurb-content').html('<p>' + currentSign.Wellness + '</p>');
-    })
+    // $('#love-icon').click(function(currentSign) {
+    //   $('#blurb-content').html('<p>' + currentSign.Love + '</p>');
+    // })
 
-    $('#career-icon').click(function(currentSign) {
-      $('#blurb-content').html('<p>' + currentSign.Career + '</p>');
-    })
+    // $('#wellness-icon').click(function(currentSign) {
+    //   $('#blurb-content').html('<p>' + currentSign.Wellness + '</p>');
+    // })
+
+    // $('#career-icon').click(function(currentSign) {
+    //   $('#blurb-content').html('<p>' + currentSign.Career + '</p>');
+    // })
 
   });
-  //
-  // $('.hover').hover(function(){
-  //
-  // })
+  
 
 });
