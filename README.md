@@ -6,18 +6,16 @@ All icons courtesy of The Noun Project, https://thenounproject.com/
 
 "Moon Phases Collection" by Beatriz Isaura Cantu Brandi
 
-"Sun" by Tinashe Mugayi
+"Sun" by Lucas fhñe
 
-"Light Bulb" by Icon Island
+"Light Bulb" by Iris Li
 
-"Lotus" by Mikicon
+"Lotus" by Image Folio
 
-"Calendar" by Iconsphere
+"Calendar" by Tracy Tam
 
 "Loading" by Nurutdinov Timur
 
-"Love" by Gregor Cresnar
+"Heart" by Futishia
 
 "Zodiac - Line Icon Collection" by Icon 54
-
-"Zen" - by Stephanie Wauters

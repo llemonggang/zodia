@@ -2,117 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" media="screen" title="no title">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./style.css" media="screen">
-
-    <title>Zodia</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Zeyada" rel="stylesheet">
+    <title></title>
   </head>
   <body>
 
   <div class="container">
-    <div id="pageOne" class="row">
-      <div class="col-xs-7">
-        <div id="ring">
-          <div class="hover">
-            <input type="image" src="./images/cancer.png" title="cancer" data-sign="cancer" alt="cancer"  id="cancer" class='sign' /><div class="appear">cancer</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/leo.png" title="leo" data-sign="leo" alt="leo" id="leo" class='sign' /><div class="appear">leo</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/virgo.png" title="virgo" data-sign="virgo" alt="virgo" id="virgo" class='sign' /><div class="appear">virgo</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/libra.png" title="libra" data-sign="libra" alt="libra" id="libra" class='sign' /><div class="appear">libra</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/scorpio.png" title="scorpio" data-sign="scorpio" alt="scorpio"  id="scorpio" class='sign' /><div class="appear">scorpio</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/sagittarius.png" title="sagittarius" data-sign="sagittarius" alt="sagittarius" id="sagittarius" class='sign' /><div class="appear">sagittarius</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/capricorn.png" title="capricorn" data-sign="capricorn" alt="capricorn" id="capricorn" class='sign' /><div class="appear">capricorn</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/aquarius.png" title="aquarius" data-sign="aquarius" alt="aquarius" id="aquarius" class='sign' /><div class="appear">aquarius</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/pisces.png" title="pisces" data-sign="pisces" alt="pisces" id="pisces" class='sign' /><div class="appear">pisces</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/aries.png" title="aries" data-sign="aries" alt="aries" id="aries" class='sign' /><div class="appear">aries</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/taurus.png" title="taurus" data-sign="taurus" alt="taurus" id="taurus" class='sign' /><div class="appear">taurus</div>
-          </div>
-          <div class="hover">
-            <input type="image" src="./images/gemini.png" title="gemini" data-sign="gemini" alt="gemini" id="gemini" class='sign' /><div class="appear">gemini</div>
-          </div>
-        </div>
+
+      <ul class="navbar">
+        <li class="moon-icon"></li>
+        <li><img src="./images/sun.png" class="sun-icon"/></li>
+        <div class="hover"><li><img src="./images/love.png" class="love-icon"/></li><div class="appear">love horoscope</div></div>
+        <div class="hover"><li><img src="./images/daily.png" class="daily-icon"/></li><div class="appear">daily horoscope</div></div>
+        <div class="hover"><li><img src="./images/wellness.png" class="wellness-icon"/></li><div class="appear">wellness horoscope</div></div>
+        <div class="hover"><li><img src="./images/career.png" class="career-icon"/></li><div class="appear">career horoscope</div></div>
+        <div class="hover"><li><img src="./images/circle.png" class="circle-icon"/></li><div class="appear">other signs</div></div>
+        <li class="moonphase"></li>
+        <li class="text sunrise"></li>
+        <li class="text sunset"></li>
+      </ul>
+
+    </br>
+    </br>
+
+    <div class="horoscope">
+
+      <div class="site-name">zodia</div>
+      <div class="hover sun-sign"></div>
+      <div class="daily-blurb"></div>
+      <div class="love-blurb"></div>
+      <div class="wellness-blurb"></div>
+      <div class="career-blurb"></div>
+
+      <div class='circle-container'>
+        <div class="hover">
+          <input type="image" src="./images/cancer.png" class='deg0 cancer' /><div class="appearTwo">cancer</br>6 21 - 7 22</div></div>
+        <div class="hover">
+          <input type="image" src="./images/leo.png" class='deg30 leo' /><div class="appearTwo">leo</br>7 23 - 8 22</div></div>
+        <div class="hover">
+          <input type="image" src="./images/virgo.png" class='deg60 virgo' /><div class="appearTwo">virgo</br>8 23 - 9 22</div></div>
+        <div class="hover">
+          <input type="image" src="./images/libra.png" class='deg90 libra' /><div class="appearTwo">libra</br>9 23 - 10 22</div></div>
+        <div class="hover">
+          <input type="image" src="./images/scorpio.png" class='deg120 scorpio' /><div class="appearTwo">scorpio</br>10 23 - 11 21</div></div>
+        <div class="hover">
+          <input type="image" src="./images/sagittarius.png" class='deg150 sagittarius' /><div class="appearTwo">sagittarius</br>11 22 - 12 21</div></div>
+        <div class="hover">
+          <input type="image" src="./images/capricorn.png" class='deg180 capricorn' /><div class="appearTwo">capricorn</br>12 22 - 01 19</div></div>
+        <div class="hover">
+          <input type="image" src="./images/aquarius.png" class='deg210 aquarius' /><div class="appearTwo">aquarius</br>01 20 - 02 18</div></div>
+        <div class="hover">
+          <input type="image" src="./images/pisces.png" class='deg240 pisces' /><div class="appearTwo">pisces</br>02 19 - 03 20</div></div>
+        <div class="hover">
+          <input type="image" src="./images/aries.png" class='deg270 aries' /><div class="appearTwo">aries</br>03 21 - 04 19</div></div>
+        <div class="hover">
+          <input type="image" src="./images/taurus.png" class='deg300 taurus' /><div class="appearTwo">taurus</br>04 20 - 05 20</div></div>
+        <div class="hover">
+          <input type="image" src="./images/gemini.png" class='deg330 gemini' /><div class="appearTwo">gemini</br>05 21 - 06 20</div></div>
       </div>
-      <div id="site-name" class="col-xs-4">zodia</div>
     </div>
 
-    <!-- page two start -->
+  </div>
 
-    <div class="row">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
-      <div class="col-xs-12">
-        <div id="sun-sign"></div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div id="blurb-content"></div>
-    </div>
-
-    <!-- <div class="row">
-        <ul id="navbar" class="col-xs-12">
-          <li><img src="./images/daily.png" title="Daily Horoscope" alt="Daily Horoscope" class="icons" id="daily-icon" /></li>
-          <li><img src="./images/love.png" title="Love Horoscope" alt="Love Horoscope" class="icons" id="love-icon" /></li>
-          <li><img src="./images/wellness.png" title="Wellness Horoscope" alt="Wellness Horoscope" class="icons" id="wellness-icon" /></li>
-          <li><img src="./images/career.png" title="Career Horoscope" alt="Career Horoscope" class="icons" id="career-icon" /></li>
-          <li><img src="./images/circle.png" title="home page" alt="home page" class="icons" id="circle-icon"/></li>
-        </ul>
-    </div>
-  </div> -->
-
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="./scripts/script.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
-
-<!-- <div class="col-xs-2">
-  <div id="halfmoon">
-    <img id="buddha" class="logo" src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-    <img id="logo" class="logo" src="./images/logo.png" alt="Logo" title="Logo" /><br>
-    <img id="mudra" class="logo" src="./images/mudra.png" alt="Mudra" title="Mudra" />
-  </div>
-</div> -->
-
-<!-- <ul id="sunmoon-panel">
-  <li>
-    <p id="moon-icon"><img src="./images/full.png" alt="Moon Icon" /></p>
-    <p id="moonphase" class="panel-text"></p>
-  </li>
-  <li>
-    <img id="sun-icon" src="./images/sun.png" alt="Sun Icon" />
-    <div>
-      <p id="sunrise" class="panel-text"></p>
-      <p id="sunset" class="panel-text"></p>
-    </div>
-  </li>
-</ul> -->
-
-<!-- <div id="halfmoon-two">
-  <img src="./images/buddha.png" alt="Buddha"  title="Buddha" /><br>
-  <img src="./images/logo.png" alt="Logo" title="Logo" /><br>
-  <img src="./images/mudra.png" alt="Mudra" title="Mudra" />
-</div> -->
