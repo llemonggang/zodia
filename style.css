@@ -1,143 +1,65 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 400%;
-  letter-spacing: .2em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
   color: white;
-  background-color: #6B7080;
+  background-image: url('./images/apod.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-  /*background-image: url('./images/beach.jpg');*/
-  /*background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;*/
-  height: 25em;
-  width: 100%;
-  margin: 15px;
-}
-
-/*home page*/
-
-/*#sunmoon-panel {
-  display: block;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 10em;
-  width: 3.5em;
-  margin-top: 6em;
-  margin-left: 1em;
-}
-#sunmoon-panel li {
-  list-style: none;
-  /*display: inline;*/
-}*/
-
-#sun-icon {
-  height: 1.3em;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-#moon-icon img{
-  height: 1.1em;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.panel-text {
-  padding: .5em;
-  font-size: .5em;
-  text-transform: uppercase;
-}
-
-#site-name {
-  position: fixed;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-size: 5.6em;
-  letter-spacing: .1em;
-  transform: rotate(90deg);
-  margin-left: 4.5em;
-  margin-top: .3em;
-}
-
-#lines {
-  position: fixed;
-  transform: rotate(90deg);
-  margin-left: 20em;
-  margin-top: -2em;
-}
-
-#lines hr {
-  padding-top: 1em;
-  margin-bottom: .6em;
-}
-
-#first {
-  margin: 0;
-  width: 10em;
-}
-
-#second {
-  width: 17em;
-}
-
-#third {
-  width: 7em;
-  margin: 0;
-}
-
-#fourth {
-  width: 8em;
-}
-
-.sign {
-  position: absolute;
-}
-
-#ring {
-  position: fixed;
-}
-
-#ring input {
-  position: absolute;
-  margin-left: 10em;
-  margin-top: 9em;
-  width: 1.5em; height: 1.5em;
-}
-
-#cancer { transform: translate(8.5em); }
-#leo { transform: rotate(30deg) translate(8.5em) rotate(-30deg); }
-#virgo { transform: rotate(60deg) translate(8.5em) rotate(-60deg); }
-#libra { transform: rotate(90deg) translate(8.5em) rotate(-90deg); }
-#scorpio { transform: rotate(120deg) translate(8.5em) rotate(-120deg); }
-#sagittarius { transform: rotate(150deg) translate(8.5em) rotate(-150deg); }
-#capricorn { transform: translate(-8.5em); }
-#aquarius { transform: rotate(210deg) translate(8.5em) rotate(-210deg); }
-#pisces { transform: rotate(240deg) translate(8.5em) rotate(-240deg); }
-#aries { transform: rotate(270deg) translate(8.5em) rotate(-270deg); }
-#taurus { transform: rotate(300deg) translate(8.5em) rotate(-300deg); }
-#gemini { transform: rotate(330deg) translate(8.5em) rotate(-330deg); }
-
-.hover:hover .appear {
-  display: none;
-}
-
-.appear {
-  position: absolute;
+  padding: 40px;
   text-align: center;
-  display: none;
-  font-size: .8em;
-  text-transform: uppercase;
-  margin-top: 11em;
-  margin-left: 13em;
 }
 
-/*removes blue box from border*/
+.moon-icon {
+  width: 35px;
+  height: auto;
+}
+
+.sun-icon {
+  width: 50px;
+  height: auto;
+}
+
+.love-icon {
+  width: 50px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.daily-icon {
+  width: 50px;
+  height: auto;
+}
+
+.wellness-icon {
+  width: 60px;
+  height: auto;
+}
+
+.career-icon {
+  width: 60px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.circle-icon {
+  width: 50px;
+  height: auto;
+  margin-left: -10px;
+}
+
+.moonphase {
+  margin-top: 2.2%;
+}
+
+a:hover {
+  color: #AFFFC7;
+}
+
 input, input:focus{
-        border-width: 0em;
+        border-width: 0px;
         outline: none;
         -webkit-appearance:none;
         box-shadow: none;
@@ -145,74 +67,86 @@ input, input:focus{
         -webkit-box-shadow: none;
 }
 
-/*main page*/
-
-#navbar {
-  position: fixed;
-  display: block;
-  text-align: center;
+ul {
+  margin-top: -1.5%;
 }
 
-#navbar li {
-  display: inline-block;
+li {
   list-style: none;
-  padding: .4em;
-  margin-top: 1em;
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 3px;
 }
 
-.icons {
-  width: 1.3em;
-  height: auto;
+.back {
+  text-decoration: none;
+  color: white;
+  margin-left: 80%;
+  margin-top: -4%;
 }
 
-#sun-sign {
-  position: fixed;
-  display: block;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: .7em;
-  text-align: center;
-  padding-bottom: 1em;
+.sun-sign {
+  margin-top: -10%;
+  margin-left: -60%;
+  font-family: 'Zeyada', cursive;
 }
 
-#blurb-content {
-  padding: 1em;
-  margin-top: 3em;
-  font-weight: 100;
-  text-align: justify;
-  overflow: scroll;
+.site-name {
+  margin-top: 12%;
+  margin-left: 3%;
+  font-family: 'Zeyada', cursive;
+  font-size: 80px;
 }
 
-/*halfmoon*/
-
-#halfmoon img {
-  margin-left: 50%;
-  margin-top: 75%;
-  width: 1.5em; height: 1.5em;
-  background-color: #BEB6D7;
-  border-radius: 1em;
-  padding: .3em;
+.circle-container input {
+    display: block;
+    position: absolute;
+    width: 6em; height: 6em;
 }
 
-#buddha {
-  margin-top: -64%;
-  transform: rotate(5deg) translate(.8em) rotate(-5deg);
+.circle-container {
+  position: absolute;
+  left: 47%;
+  top: 45%;
 }
 
-#logo {
-  margin-top: -43%;
-  transform: rotate(5deg) translate(-1.2em) rotate(-5deg);
+.deg0 { transform: translate(24em); }
+.deg30 { transform: rotate(30deg) translate(24em) rotate(-30deg); }
+.deg60 { transform: rotate(60deg) translate(24em) rotate(-60deg); }
+.deg90 { transform: rotate(90deg) translate(24em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(24em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(24em) rotate(-150deg); }
+.deg180 { transform: translate(-24em); }
+.deg210 { transform: rotate(210deg) translate(24em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(24em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(24em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(24em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(24em) rotate(-330deg); }
+
+div.appear {
+  font-size: 12px;
+  width: 100px;
+  position: absolute;
+  display:none;
 }
 
-#mudra {
-  margin-top: -23%;
-  transform: rotate(5deg) translate(.8em) rotate(-5deg);
+div.hover:hover div.appear {
+    display: inline;
+    margin-left: -80px;
+    margin-top: -20px;
 }
 
-#halfmoon-two img {
-  width: 1.5em; height: 1.5em;
-  background-color: #BEB6D7;
-  border-radius: 1em;
-  padding: .3em;
-  float: right;
+div.appearTwo {
+  font-size: 12px;
+  width: 100px;
+  position: absolute;
+  display:none;
+  text-transform: lowercase;
+}
+
+div.hover:hover div.appearTwo {
+    display: inline;
+    margin-top: -90px;
+    margin-left: -10px;
 }
