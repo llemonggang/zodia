@@ -91,6 +91,9 @@ function horoscope() {
 }).done(function(data) {
     console.log(data);
 
+    var aries = data[0];
+    var taurus = data[1];
+    var gemini = data[2];
     var cancer = data[3];
     var leo = data[4];
     var virgo = data[5];
@@ -100,9 +103,7 @@ function horoscope() {
     var capricorn = data[9];
     var aquarius = data[10];
     var pisces = data[11];
-    var aries = data[0];
-    var taurus = data[1];
-    var gemini = data[2];
+    
 
 
     $('.cancer').click(function(e) {
